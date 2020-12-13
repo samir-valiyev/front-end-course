@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- META TAGS START -->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Creating Responsive Web Sites " />
+		<meta name="keywords" content="HTML, CSS, Responsive Templates" />
+		<meta name="author" content="Samir Valiyev" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- META TAGS END -->
+
+		<!-- CSS START -->
+		<link rel="stylesheet" type="text/css" href="css/main.min.css" />
+		<!-- CSS END -->
+
+		<!-- FAVICON ICON START -->
+		<link rel="icon" type="image/png" href="images/favicon/moon-8-star.png" />
+		<!-- FAVICON ICON START -->
+
+		<!-- FONT AWESOME 5.12 START-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+		/>
+		<!-- FONT AWESOME 5.12 END-->
+
+		<title>template</title>
+	</head>
+
+	<body>
+		<!-- MAIN START -->
+		<main>
+			<!-- ==================== -->
+			<!-- Form Validation Start-->
+			<!-- ==================== -->
+			<div class="form">
+				<h2 class="form__title">Registration Form</h2>
+				<form method="POST">
+					<!-- First Name Start -->
+					<div class="form__input-group">
+						<label for="first-name">First Name</label>
+						<input type="text" id="first-name" required />
+					</div>
+					<!-- First Name End -->
+					<br />
+					<!-- Last Name Start -->
+					<div class="form__input-group">
+						<label for="last-name">Last Name</label>
+						<input type="text" id="last-name" required />
+					</div>
+					<!-- Last Name End -->
+					<br />
+					<!-- Birthday Start-->
+					<div class="form__input-group">
+						<label for="birthday">Birthday</label>
+						<input type="date" id="birthday" required />
+					</div>
+					<!-- Birthday End -->
+					<br />
+					<!-- Gender Start -->
+					<div class="form__input-group">
+						<label for="gender">Gender</label>
+						<div class="form__radio-group">
+							<input type="radio" id="male" required />
+							<label for="male">Male</label>
+							<input type="radio" id="female" required />
+							<label for="female">Female</label>
+						</div>
+					</div>
+					<!-- Gender End -->
+					<br />
+					<!-- Email Start -->
+					<div class="form__input-group">
+						<label for="email">Email</label>
+						<input type="text" id="email" required />
+					</div>
+					<!-- Email End -->
+					<br />
+					<!-- Phone Number Start -->
+					<div class="form__input-group">
+						<label for="phone">Phone Number</label>
+						<input
+							type="tell"
+							id="phone"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+							placeholder="050-000-00-00"
+							required
+						/>
+					</div>
+					<!-- Phone Number End -->
+					<br />
+					<!-- Subject Start -->
+					<div class="form__input-group">
+						<label for="subject">Subject</label>
+						<select id="subject">
+							<option value="choose option">Choose option</option>
+							<option value="Subject 1">Subject 1</option>
+							<option value="Subject 2">Subject 2</option>
+							<option value="Subject 3">Subject 3</option>
+						</select>
+					</div>
+					<!-- Subject End -->
+					<br />
+					<!-- Submit Button Start -->
+					<button type="submit" class="form__submit">Submit</button>
+					<!-- Submit Button End -->
+				</form>
+			</div>
+			<!-- ================== -->
+			<!-- Form Validation End-->
+			<!-- ================== -->
+		</main>
+		<!-- MAIN END -->
+
+		<!-- JAVASCRIPT START-->
+		<script src="scripts/main.js"></script>
+		<!-- JAVASCRIPT END-->
+	</body>
+</html>
