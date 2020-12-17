@@ -14,7 +14,7 @@
 		<!--============ CSS END ================-->
 
 		<!--======= FAVICON ICON START ==========-->
-		<link rel="icon" type="image/png" href="images/favicon/moon-8-star.png" />
+		<link rel="icon" type="image/png" href="/images/favicon/favicon.ico" />
 		<!--======== FAVICON ICON END ===========-->
 
 		<!--====== FONT AWESOME 5.12 START ======-->
@@ -28,13 +28,81 @@
 	</head>
 
 	<body>
-		<!--=====================================-->
+<!--=====================================-->
 		<!--=========== HEADER START ============-->
 		<!--=====================================-->
-		<header></header>
+		<header>
+			<div>
+				<!-- Social Media Icons Start -->
+				<div class="header__social-media-i">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-pinterest-p"></i>
+				</div>
+				<!-- Social Media Icons End -->
+
+				<!-- Logo Start -->
+				<div class="header__logo">
+					<figure>
+						<img src="images/logo.jpg" alt=" Philosophy site logo" />
+					</figure>
+				</div>
+				<!-- Logo End -->
+
+				<!-- Search Area Start -->
+				<div class="header__search-area">
+					<a href="#">SEARCH</a>
+					<i class="fas fa-search"></i>
+				</div>
+				<!-- Search Area End -->
+				<hr />
+			</div>
+			<!-- Navigation Menu Start -->
+			<div class="header__navigation">
+				<nav class="header__nav-menu">
+					<ul class="header__nav-menu-items">
+						<li class="header__nav-menu-item"><a href="../index.html">Home</a></li>
+						<li class="header__nav-menu-item">
+							<a href="#">Categories</a>
+							<!-- Categories Dropdown Menu Start -->
+							<ul>
+								<li><a href="#">Lifestyle</a></li>
+								<li><a href="#">Health</a></li>
+								<li><a href="#">Family</a></li>
+								<li><a href="#">Management</a></li>
+								<li><a href="#">Travel</a></li>
+								<li><a href="#">Work</a></li>
+							</ul>
+							<!-- Categories Dropdown Menu End -->
+						</li>
+						<li class="header__nav-menu-item">
+							<a href="#">Blog</a>
+							<!-- Blog Dropdown Menu Start -->
+							<ul>
+								<li><a href="#">Video Post</a></li>
+								<li><a href="#">Audio Post</a></li>
+								<li><a href="#">Gallery Post</a></li>
+								<li><a href="#">Standart Post</a></li>
+							</ul>
+							<!-- End Dropdown Menu Start -->
+						</li>
+						<li class="header__nav-menu-item">
+							<a href="#">Styles</a>
+						</li>
+						<li class="header__nav-menu-item"><a href="#">About</a></li>
+						<li class="header__nav-menu-item">
+							<a href="../pages/contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Navigation Menu End -->
+		</header>
 		<!--=====================================-->
 		<!--=========== HEADER END ==============-->
 		<!--=====================================-->
+
 
 		<!--=====================================-->
 		<!--=========== MAIN START ==============-->
@@ -386,7 +454,241 @@
 					</table>
 				</div>
 				<!-- Tables End -->
+				<!-- Form Styles Start -->
+				<div>
+					<h3>Form Styles</h3>
+					<form method="POST">
+						<div>
+							<label for="email">Your email</label>
+							<input type="email" placeholder="test@mailbox.com">
+						</div>
+						<div>
+						<select name="question">
+							<option value="questions">Questions</option>
+							<option value="report">Report</option>
+							<option value="others">Others</option>
+						</select>
+						</div>
+						<div>
+							<label for="message">Message</label>
+							<textarea name="message" cols="30" rows="10"></textarea>
+						</div>
+						<div>
+							<input type="checkbox">
+							<label for="checkbox">Send a copy to yourself</label>
+						</div>
+						<button type="submit">SUBMIT</button>
+					</form>
+				</div>
+				<!-- Form Styles End -->
+
+				<!-- Alert Boxes Start -->
+				<div>
+					<!-- Error Box Start -->
+					<div>
+						<h3>Alert Boxes</h3>
+						<div>
+							<i class="fas fa-times"></i>
+							<p>Error Message. Your Message Goes Here.</p>
+						</div>
+					</div>
+					<!-- Error Box End -->
+
+					<!-- Success Box Start -->
+					<div>
+						<h3>Alert Boxes</h3>
+						<div>
+							<i class="fas fa-times"></i>
+							<p>Success Message. Your Message Goes Here.</p>
+						</div>
+					</div>
+					<!-- Success Box End -->
+
+					<!-- Info Box Start -->
+					<div>
+						<h3>Alert Boxes</h3>
+						<div>
+							<i class="fas fa-times"></i>
+							<p>Info Message. Your Message Goes Here.</p>
+						</div>
+					</div>
+					<!-- Info Box End -->
+
+					<!-- Notice Box Start -->
+					<div>
+						<h3>Alert Boxes</h3>
+						<div>
+							<i class="fas fa-times"></i>
+							<p>Notice Message. Your Message Goes Here.</p>
+						</div>
+					</div>
+					<!-- Notice Box End -->
+				</div>
+				<!-- Alert Boxes End -->
 			</div>
+			<!-- Popular Posts and About Philosophy Section Starts -->
+			<section>
+				<div>
+					<!-- Posts Starts -->
+					<div class="popular-posts">
+						<!-- Post 1 Start -->
+						<div class="post">
+							<div class="post-image">
+								<figure>
+									<img src="../images/1-home-page/wheel-150.jpg" alt="wheel" />
+								</figure>
+							</div>
+							<div class="post-texts">
+								<a href="#"
+									><h4>Visiting Theme Parks Improves Your Health</h4></a
+								>
+								<p>
+									By <a href="#">John Doe</a> on
+									<time datetime="2017-12-19 20:00">Dec 19, 2017</time>
+								</p>
+							</div>
+						</div>
+						<!-- Post 1 End -->
+
+						<!-- Post 2 Start -->
+						<div class="post">
+							<div class="post-image">
+								<figure>
+									<img
+										src="../images/1-home-page/cookies-150.webp"
+										alt="cookies"
+									/>
+								</figure>
+							</div>
+							<div class="post-texts">
+								<a href="#"><h4>Absolutely No Sugar Oatmeal Cookies.</h4></a>
+								<p>
+									By <a href="#">John Doe</a> on
+									<time datetime="2017-12-19 20:00">Dec 19, 2017</time>
+								</p>
+							</div>
+						</div>
+						<!-- Post 2 End -->
+
+						<!-- Post 3 Start -->
+						<div class="post">
+							<div class="post-image">
+								<figure>
+									<img src="/images/1-home-page/tulips-150.jpg" alt="tulips" />
+								</figure>
+							</div>
+							<div class="post-texts">
+								<a href="#"><h4>10 Interesting Facts About Caffeine.</h4></a>
+								<p>
+									By <a href="#">John Doe</a> on
+									<time datetime="2017-12-19 20:00">Dec 19, 2017</time>
+								</p>
+							</div>
+						</div>
+						<!-- Post 3 End -->
+
+						<!-- Post 4 Start -->
+						<div class="post">
+							<div class="post-image">
+								<figure>
+									<img
+										src="../images/1-home-page/shutterbug-150.jpg"
+										alt="shutterbug"
+									/>
+								</figure>
+							</div>
+							<div class="post-texts">
+								<a href="#"><h4>Key Benefits Of Family Photography.</h4></a>
+								<p>
+									By <a href="#">John Doe</a> on
+									<time datetime="2017-12-19 20:00">Dec 19, 2017</time>
+								</p>
+							</div>
+						</div>
+						<!-- Post 4 End -->
+
+						<!-- Post 5 Start -->
+						<div class="post">
+							<div class="post-image">
+								<figure>
+									<img src="../images/1-home-page/beetle-150.jpg" alt="beetle" />
+								</figure>
+							</div>
+							<div class="post-texts">
+								<a href="#"><h4>Throwback To The Good Old Days.</h4></a>
+								<p>
+									By <a href="#">John Doe</a> on
+									<time datetime="2017-12-19 20:00">Dec 19, 2017</time>
+								</p>
+							</div>
+						</div>
+						<!-- Post 5 End  -->
+						<!-- Post 6 Start  -->
+						<div class="post">
+							<div class="post-image">
+								<figure>
+									<img src="../images/1-home-page/salad-150.jpg" alt="salad" />
+								</figure>
+							</div>
+							<div class="post-texts">
+								<a href="#"><h4>Healthy Mediterranean Salad Recipes</h4></a>
+								<p>
+									By <a href="#">John Doe</a> on
+									<time datetime="2017-12-19 20:00">Dec 19, 2017</time>
+								</p>
+							</div>
+						</div>
+						<!-- Post 6 End -->
+					</div>
+					<!-- Posts Ends -->
+
+					<!-- About Philosophy Starts -->
+					<div class="about-philosophy">
+						<div class="about-philoshophy__title">
+							<h2>About Philosophy</h2>
+						</div>
+						<div class="about-philosophy__text">
+							<p>
+								Donec sollicitudin molestie malesuada. Nulla quis lorem ut
+								libero malesuada feugiat. Pellentesque in ipsum id orci porta
+								dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+								ultrices posuere cubilia Curae; Donec velit neque, auctor sit
+								amet aliquam vel, ullamcorper sit amet ligula. Quisque velit
+								nisi, pretium ut lacinia in, elementum id enim. Donec
+								sollicitudin molestie malesuada.
+							</p>
+						</div>
+						<div class="header__social-media-icons">
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-linkedin-in"></i>
+							<i class="fab fa-pinterest-p"></i>
+						</div>
+					</div>
+					<!-- About Philosophy Ends -->
+					<!-- Tags Start -->
+					<div class="tags">
+						<div>
+							<a href="#">SALAD</a>
+							<a href="#">RECIPE</a>
+							<a href="#">PLACES</a>
+							<a href="#">TIPS</a>
+							<a href="#">FRIENDS</a>
+							<a href="#">TRAVEL</a>
+							<a href="#">EXERCISE</a>
+						</div>
+
+						<div>
+							<a href="#">READING</a>
+							<a href="#">RUNNING</a>
+							<a href="#">SELF-HELP</a>
+							<a href="#">VACATOIN</a>
+						</div>
+					</div>
+					<!-- Tags End -->
+				</div>
+			</section>
+			<!-- Popular Posts and About Philosophy Section Ends -->
 		</main>
 		<!--=====================================-->
 		<!--=========== MAIN END ================-->
@@ -395,7 +697,96 @@
 		<!--=====================================-->
 		<!--=========== FOOTER START ============-->
 		<!--=====================================-->
-		<footer></footer>
+		<footer>
+			<div>
+				<div>
+					<div class="footer__our-links">
+						<!-- Quick Links Start -->
+						<div>
+							<h4>QUICK LINKS</h4>
+							<!-- gray line start -->
+							<div></div>
+							<!-- gray line end -->
+							<nav>
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Styles</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- Quick Links End -->
+
+						<!-- Archives Start -->
+						<div>
+							<h4>ARCHIVES</h4>
+							<!-- gray line start -->
+							<div></div>
+							<!-- gray line end -->
+							<nav>
+								<ul>
+									<li><a href="#">January 2018</a></li>
+									<li><a href="#">December 2017</a></li>
+									<li><a href="#">November 2017</a></li>
+									<li><a href="#">October 2017</a></li>
+									<li><a href="#">September 2017</a></li>
+									<li><a href="#">August 2017</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- Archives End -->
+
+						<!-- Social Start -->
+						<div>
+							<h4>SOCIAL</h4>
+							<!-- gray line start -->
+							<div></div>
+							<!-- gray line end -->
+							<nav>
+								<ul>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Instagram</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Pinterest</a></li>
+									<li><a href="#">Google+</a></li>
+									<li><a href="#">LinkedIn</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- Social End -->
+					</div>
+					<div class="footer__our-newsletters">
+						<div>
+							<h4>OUR NEWSLETTER</h4>
+							<!-- gray line start -->
+							<div></div>
+							<!-- gray line end -->
+							<p>
+								Sit vel delectus amet officiis repudiandae est voluptatem.
+								Tempora maxime provident nisi et fuga et enim exercitationem
+								ipsam. Culpa consequatur occaecati.
+							</p>
+							<form>
+								<i class="far fa-envelope"></i>
+								<input type="email" placeholder="Email Address" required />
+								<button type="submit">SEND</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright-and-by">
+					<span>© Copyright Philosophy 2018</span>
+					<span>|</span>
+					<span
+						>Site Template by <a href="https://colorlib.com/">Colorib</a></span
+					>
+				</div>
+			</div>
+		</footer>
 		<!--=====================================-->
 		<!--=========== FOOTER END ==============-->
 		<!--=====================================-->
