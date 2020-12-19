@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*Variables*/
+//Colors
+$black: #000;
+$white: #fff;
+
+// fonts
+$font-roboto: "Roboto", sans-serif;
+
+/*Mixins*/
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+}
+
+/*==========HEADER START==========*/
+/*==========HEADER END==========*/
+
+/*==========MAIN START==========*/
+
+main {
+	font-size: 1.6rem;
+	margin-bottom: 3rem;
+	/* All Home Tasks Start*/
+	.home-tasks {
+		@include flex;
+		flex-direction: column;
+		h3 {
+			font-size: 2rem;
+			text-align: center;
+			margin: 3rem 0;
+		}
+
+		// Task 1 Start
+		.task-1 {
+			.task-1__box {
+				width: 40rem;
+				height: 40rem;
+				border: 2rem solid $black;
+				padding-left: 7rem;
+			}
+		}
+		// Task 1 End
+
+		// Task 2 Start
+		.task-2 {
+			.task-2__paragraphs {
+				p {
+					text-align: center;
+				}
+				.task-2__paragraph-color {
+					color: #ff0aa1;
+				}
+			}
+		}
+		// Task 2 End
+
+		// Task 3 Start
+		.task-3 {
+			.task-3__boxes {
+				@include flex;
+
+				.task-3__box {
+					width: 40rem;
+					height: 40rem;
+					background-color: #18c050;
+					border: 0.5rem solid $black;
+					margin: 1rem;
+					@include flex;
+
+					.task-3__box-circle {
+						width: 20rem;
+						height: 20rem;
+						background-color: #0adbca;
+						border-radius: 50%;
+						border: 0.2rem solid $black;
+					}
+				}
+			}
+		}
+		// Task 3 End
+
+		// Task 4 Start
+		.task-4 {
+			.task-4__paragraph {
+				p:hover::after {
+					content: " Samirdir";
+				}
+			}
+		}
+		// Task 4 End
+
+		// Task 5 Start
+
+		.task-5 {
+			.task-5__main {
+				.content[data-name]:hover::before {
+					content: attr(data-name);
+				}
+			}
+		}
+		// Task 5 End
+	}
+	/* All Home Tasks End*/
+}
+
+/*==========MAIN END==========*/
+
+/*==========FOOTER START==========*/
+/*==========FOOTER END==========*/

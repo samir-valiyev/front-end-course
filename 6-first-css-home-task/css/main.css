@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*Variables*/
+/*Mixins*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*==========HEADER START==========*/
+/*==========HEADER END==========*/
+/*==========MAIN START==========*/
+main {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  /* All Home Tasks Start*/
+  /* All Home Tasks End*/
+}
+
+main .home-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .home-tasks h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+main .home-tasks .task-1 .task-1__box {
+  width: 40rem;
+  height: 40rem;
+  border: 2rem solid #000;
+  padding-left: 7rem;
+}
+
+main .home-tasks .task-2 .task-2__paragraphs p {
+  text-align: center;
+}
+
+main .home-tasks .task-2 .task-2__paragraphs .task-2__paragraph-color {
+  color: #ff0aa1;
+}
+
+main .home-tasks .task-3 .task-3__boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .home-tasks .task-3 .task-3__boxes .task-3__box {
+  width: 40rem;
+  height: 40rem;
+  background-color: #18c050;
+  border: 0.5rem solid #000;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .home-tasks .task-3 .task-3__boxes .task-3__box .task-3__box-circle {
+  width: 20rem;
+  height: 20rem;
+  background-color: #0adbca;
+  border-radius: 50%;
+  border: 0.2rem solid #000;
+}
+
+main .home-tasks .task-4 .task-4__paragraph p:hover::after {
+  content: " Samirdir";
+}
+
+main .home-tasks .task-5 .task-5__main .content[data-name]:hover::before {
+  content: attr(data-name);
+}
+
+/*==========MAIN END==========*/
+/*==========FOOTER START==========*/
+/*==========FOOTER END==========*/
+/*# sourceMappingURL=main.css.map */
