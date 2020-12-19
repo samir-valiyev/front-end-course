@@ -9,14 +9,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /*==========HEADER START==========*/
 /*==========HEADER END==========*/
 /*==========MAIN START==========*/
 /*==========MAIN END==========*/
 /*==========FOOTER START==========*/
 /*==========FOOTER END==========*/
-.first-letter {
-  font-size: 3rem;
-  line-height: 70px;
-}
 /*# sourceMappingURL=main.css.map */
