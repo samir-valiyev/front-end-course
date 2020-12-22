@@ -13,6 +13,29 @@ html {
   font-size: 62.5%;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container figure {
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.container figure img {
+  width: 400px;
+  height: 400px;
+  transform: rotateX(75deg) rotateZ(-60deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.container figure img:hover {
+  transform: rotateX(0deg);
+}
+
 /*==========HEADER START==========*/
 /*==========HEADER END==========*/
 /*==========MAIN START==========*/

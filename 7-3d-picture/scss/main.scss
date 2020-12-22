@@ -24,9 +24,25 @@ $font-roboto: "Roboto", sans-serif;
 html {
 	font-size: 62.5%;
 }
-body {
-}
 
+.container {
+	@include flex;
+	height: 100vh;
+	figure {
+		perspective: 500px;
+		transform-style: preserve-3d;
+		img {
+			width: 400px;
+			height: 400px;
+			transform: rotateX(75deg) rotateZ(-60deg);
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				transform: rotateX(0deg);
+			}
+		}
+	}
+}
 /*==========HEADER START==========*/
 /*==========HEADER END==========*/
 
