@@ -20,26 +20,18 @@ html {
   height: 100vh;
 }
 
-.container figure {
+.container .container__img-box {
   perspective: 500px;
   transform-style: preserve-3d;
 }
 
-.container figure img {
-  width: 400px;
+.container .container__img-box img {
   height: 400px;
   transform: rotateX(75deg) rotateZ(-60deg);
   transition: all 0.3s ease-in-out;
 }
 
-.container figure img:hover {
+.container .container__img-box img:hover {
   transform: rotateX(0deg);
 }
-
-/*==========HEADER START==========*/
-/*==========HEADER END==========*/
-/*==========MAIN START==========*/
-/*==========MAIN END==========*/
-/*==========FOOTER START==========*/
-/*==========FOOTER END==========*/
 /*# sourceMappingURL=main.css.map */

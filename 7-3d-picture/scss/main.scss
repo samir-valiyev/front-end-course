@@ -28,11 +28,11 @@ html {
 .container {
 	@include flex;
 	height: 100vh;
-	figure {
+
+	.container__img-box {
 		perspective: 500px;
 		transform-style: preserve-3d;
 		img {
-			width: 400px;
 			height: 400px;
 			transform: rotateX(75deg) rotateZ(-60deg);
 			transition: all 0.3s ease-in-out;
@@ -43,11 +43,3 @@ html {
 		}
 	}
 }
-/*==========HEADER START==========*/
-/*==========HEADER END==========*/
-
-/*==========MAIN START==========*/
-/*==========MAIN END==========*/
-
-/*==========FOOTER START==========*/
-/*==========FOOTER END==========*/
