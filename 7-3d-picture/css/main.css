@@ -29,9 +29,11 @@ html {
   height: 400px;
   transform: rotateX(75deg) rotateZ(-60deg);
   transition: all 0.3s ease-in-out;
+  box-shadow: -40px 20px 15px -5px rgba(33, 34, 32, 0.7);
 }
 
 .container .container__img-box img:hover {
   transform: rotateX(0deg);
+  box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */
