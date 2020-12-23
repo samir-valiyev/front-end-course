@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*Variables*/
+//Colors
+$black: #000;
+$white: #fff;
+
+// fonts
+$font-roboto: "Roboto", sans-serif;
+
+// border radius
+
+@mixin border-r {
+	border-radius: 30px;
+}
+
+/*Mixins*/
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+.container {
+	height: 100vh;
+	@include flex;
+	.container-3d-card {
+		font-size: 1.6rem;
+		position: relative;
+		width: 410px;
+		height: 700px;
+		transform-style: preserve-3d;
+		transition: all 0.4s ease-in-out;
+
+		.side {
+			position: absolute;
+			width: inherit;
+			height: inherit;
+			text-align: center;
+
+			@include border-r;
+
+			.profile-card {
+				padding: 80px 40px;
+				.profile-card__name {
+					margin: 40px 0;
+				}
+
+				.profile-card__job {
+					margin: 10px 0;
+				}
+
+				.profile-card__description {
+					p {
+						font-size: 1.7rem;
+					}
+				}
+
+				.profile-card__social-icons {
+					margin: 40px 0;
+					display: flex;
+					justify-content: space-between;
+					.profile-card__social-icon {
+						display: flex;
+						flex-direction: column;
+						a {
+							i {
+								font-size: 3rem;
+								cursor: pointer;
+								margin-bottom: 10px;
+							}
+							.fa-facebook-square {
+								color: #1850c7;
+							}
+							.fa-github-square {
+								color: #151516;
+							}
+
+							.fa-instagram {
+								background: linear-gradient(
+									#405de6,
+									#5851db,
+									#833ab4,
+									#c13584,
+									#e1306c,
+									#fd1d1d
+								);
+							}
+
+							.fa-twitter-square {
+								color: #00acee;
+							}
+
+							.fa-telegram {
+								color: #0088cc;
+							}
+						}
+
+						span {
+							&:last-child {
+								font-size: 1.2rem;
+							}
+						}
+					}
+				}
+
+				.profile-card__hireme-btn {
+					margin-bottom: 20px;
+					a {
+						background-color: #4caf50;
+						border: none;
+						color: white;
+						padding: 15px 32px;
+						text-align: center;
+						font-size: 16px;
+						margin: 4px 2px;
+						cursor: pointer;
+						border-radius: 20px;
+					}
+				}
+
+				.profile-card__follow-message-btns {
+					display: flex;
+					justify-content: space-between;
+
+					a {
+						background-color: #4caf50;
+						border: none;
+						color: white;
+						padding: 15px 52px;
+						text-align: center;
+						font-size: 16px;
+						margin: 4px 2px;
+						cursor: pointer;
+						border-radius: 20px;
+					}
+				}
+			}
+		}
+
+		.front {
+			background-color: #fff;
+			img {
+				@include border-r;
+			}
+		}
+
+		.back {
+			transform: rotateY(180deg) translateZ(1px);
+
+			background: #ef32d9; /* fallback for old browsers */
+			background: -webkit-linear-gradient(
+				to right,
+				#b6ef32,
+				#89fffd
+			); /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(
+				to right,
+				#ecef32,
+				#89fffd
+			); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+
+		&:hover {
+			transform: rotateY(180deg);
+		}
+	}
+}
+
+/*==========HEADER START==========*/
+/*==========HEADER END==========*/
+
+/*==========MAIN START==========*/
+/*==========MAIN END==========*/
+
+/*==========FOOTER START==========*/
+/*==========FOOTER END==========*/
