@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+
+/*Variables*/
+//Colors
+$black: #000;
+$white: #fff;
+
+// fonts
+$font-roboto: "Mulish", sans-serif;
+
+/*Mixins*/
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+}
+
+/*==========HEADER START==========*/
+/*==========HEADER END==========*/
+
+/*==========MAIN START==========*/
+/*==========MAIN END==========*/
+
+/*==========FOOTER START==========*/
+/*==========FOOTER END==========*/
