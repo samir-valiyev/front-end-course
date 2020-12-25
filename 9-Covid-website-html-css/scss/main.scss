@@ -45,16 +45,15 @@ html {
 /*==========HEADER START==========*/
 header {
 	background-color: $section-bg-color;
+
 	.header {
 		width: 110rem;
 		margin: 0 auto;
 
 		.header__items {
+			height: 7rem;
 			display: flex;
 			justify-content: space-between;
-
-			// width: 100%;
-			height: 7rem;
 
 			.header__logo {
 				@include flex;
@@ -66,39 +65,28 @@ header {
 			}
 
 			.header__nav {
-				display: flex;
+				height: 8rem;
 
-				align-items: center;
+				#check {
+					display: none;
+				}
+				.checkbtn {
+					font-size: 3rem;
+					cursor: pointer;
+					display: none;
+					i {
+					}
+				}
 
 				font-size: 1.6rem;
 				ul {
 					display: flex;
-					justify-content: flex-end;
-					max-width: 110rem;
-					margin: 0 auto;
-					padding: 0;
 					li {
-						position: relative;
-						padding: 1rem 0rem;
-						transition: 0.5s;
+						display: inline-block;
+						margin: 0 0.5rem;
 						a {
-							padding: 0 2rem;
 						}
 						ul {
-							position: absolute;
-							background-color: $white;
-							top: 4rem;
-							left: 0;
-							display: block;
-							width: 20rem;
-							transition: 0.5s;
-							opacity: 0;
-							visibility: hidden;
-						}
-
-						&:hover ul {
-							opacity: 1;
-							visibility: visible;
 						}
 					}
 				}
@@ -107,46 +95,7 @@ header {
 	}
 }
 /*==========HEADER END==========*/
-@media (max-width: 768px) {
-	header {
-		.header {
-			.header__items {
-				.header__logo {
-					a {
-					}
-				}
 
-				.header__nav {
-					ul {
-						display: block;
-						li {
-							display: block;
-							a {
-							}
-
-							a {
-								i {
-								}
-							}
-
-							ul {
-								width: 100%;
-								z-index: 1000;
-								li {
-									a {
-									}
-								}
-							}
-
-							&:hover ul {
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 .main {
 	/*Banner section start*/
 	.section__banner {
@@ -726,13 +675,187 @@ header {
 	/*News & Article section end*/
 }
 
+/*MAIN MEDIA QUERY START*/
+@media (max-width: 1100px) {
+	.main {
+		/*Banner section start*/
+		.section__banner {
+			.banner {
+				@include flex;
+
+				flex-direction: column;
+				.banner__text-area {
+					a {
+						@include btn;
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+		/*Banner section end*/
+
+		/*Coronavirus Statistics Section start*/
+		section {
+			.corona-statist {
+				margin-right: 10rem;
+
+				.corona-statist__text-area {
+					h2 {
+					}
+					p {
+					}
+				}
+
+				.corona-statist__datas {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+
+					.corona-statist__datas-active-cases {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+				}
+			}
+		}
+		/*Coronavirus Statistics Section end*/
+
+		/*What is coronavirus section start end*/
+		section {
+			.w-is-coronavirus {
+				.w-is-coronavirus__img-texts {
+					@include flex;
+
+					flex-direction: column;
+					.w-is-coronavirus__img {
+						.w-is-coronavirus__play-btn {
+							position: relative;
+						}
+					}
+				}
+				.w-is-coronavirus-features {
+					@include flex;
+					flex-direction: column;
+
+					.w-is-coronavirus-features__protection {
+						display: flex;
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+		/*What is coronavirus section end*/
+
+		/*How to prevent coronavirus section start*/
+		.how-to-pre-corona__section {
+			.how-to-pre-corona {
+				@include flex;
+				flex-direction: column;
+
+				display: flex;
+				.how-to-pre-corona__cards {
+					.how-to-pre-corona__card-left {
+					}
+					.how-to-pre-corona__card {
+					}
+				}
+
+				.how-to-pre-corona__text-area {
+					margin-top: 5rem;
+
+					p:nth-of-type(1) {
+						width: 50rem;
+					}
+				}
+			}
+		}
+
+		/*How to prevent coronavirus section end*/
+
+		/*How To Protect Yourself section start */
+		section {
+			.how-to-pro-yourself {
+				.how-to-pro-yourself__text-area {
+					@include flex;
+					flex-direction: column;
+					text-align: center;
+					p {
+						width: 50rem;
+					}
+				}
+				.how-to-pro-yourself__div {
+					@include flex;
+					flex-direction: column;
+					margin-top: 8.5rem;
+					.how-to-pro-yourself__check-list {
+						display: flex;
+					}
+				}
+			}
+		}
+		/*How To Protect Yourself section end*/
+
+		/*Symptoms of coronavirus section start*/
+		.symptoms-of-corona__section {
+			background-color: $section-bg-color;
+			.symptoms-of-corona {
+				.symptoms-of-corona__text-area {
+					@include flex;
+					flex-direction: column;
+				}
+
+				.symptoms-of-corona__cases {
+					@include flex;
+					flex-direction: column;
+				}
+
+				.symptoms-of-corona__footer {
+					@include flex;
+					flex-direction: column;
+					margin-top: 5rem;
+					margin-left: 11rem;
+					p {
+						font-size: 1.6rem;
+						color: rgb(170, 170, 170);
+						line-height: 1.5;
+						strong {
+							color: $purple;
+						}
+					}
+					.symptoms-of-corona__footer__btn {
+						margin-top: 2rem;
+					}
+				}
+			}
+		}
+		/*Symptoms of coronavirus section end*/
+
+		/*News & Article section start*/
+		section {
+			.news-and-articles {
+				.news-and-articles__text-area {
+					text-align: center;
+					margin-bottom: 2rem;
+				}
+
+				.news-and-articles__blogs {
+					@include flex;
+					flex-direction: column;
+				}
+			}
+		}
+		/*News & Article section end*/
+	}
+}
+/*MAIN MEDIA QUERY End*/
+
 /*==========FOOTER START==========*/
 
 footer {
 	.footer {
 		width: 110rem;
 		margin: 0 auto;
-
 		.footer__features {
 			display: flex;
 			justify-content: space-between;
@@ -796,3 +919,45 @@ footer {
 	}
 }
 /*==========FOOTER END==========*/
+
+/*Footer media query start*/
+@media (max-width: 1100px) {
+	footer {
+		.footer {
+			.footer__features {
+				@include flex;
+				flex-direction: column;
+				.footer__features__about {
+					@include flex;
+					flex-direction: column;
+					.footer__features__social-icons {
+						margin-bottom: 2rem;
+					}
+				}
+				.footer__features__style {
+					ul {
+						margin-bottom: 2rem;
+					}
+				}
+			}
+
+			.footer__copyright {
+				margin: 3rem 0;
+				text-align: center;
+				p {
+					font-size: 1.4rem;
+					font-weight: 400;
+					color: rgba(0, 0, 0, 0.7);
+					i {
+						font-size: 1.6rem;
+						color: red;
+						margin-right: 0.3rem;
+					}
+					a {
+					}
+				}
+			}
+		}
+	}
+}
+/*Footer media query end*/

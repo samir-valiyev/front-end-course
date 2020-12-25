@@ -26,9 +26,9 @@ header .header {
 }
 
 header .header .header__items {
+  height: 7rem;
   display: flex;
   justify-content: space-between;
-  height: 7rem;
 }
 
 header .header .header__items .header__logo {
@@ -44,60 +44,30 @@ header .header .header__items .header__logo a {
 }
 
 header .header .header__items .header__nav {
-  display: flex;
-  align-items: center;
+  height: 8rem;
   font-size: 1.6rem;
+}
+
+header .header .header__items .header__nav #check {
+  display: none;
+}
+
+header .header .header__items .header__nav .checkbtn {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
 }
 
 header .header .header__items .header__nav ul {
   display: flex;
-  justify-content: flex-end;
-  max-width: 110rem;
-  margin: 0 auto;
-  padding: 0;
 }
 
 header .header .header__items .header__nav ul li {
-  position: relative;
-  padding: 1rem 0rem;
-  transition: 0.5s;
-}
-
-header .header .header__items .header__nav ul li a {
-  padding: 0 2rem;
-}
-
-header .header .header__items .header__nav ul li ul {
-  position: absolute;
-  background-color: #fff;
-  top: 4rem;
-  left: 0;
-  display: block;
-  width: 20rem;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-header .header .header__items .header__nav ul li:hover ul {
-  opacity: 1;
-  visibility: visible;
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 /*==========HEADER END==========*/
-@media (max-width: 768px) {
-  header .header .header__items .header__nav ul {
-    display: block;
-  }
-  header .header .header__items .header__nav ul li {
-    display: block;
-  }
-  header .header .header__items .header__nav ul li ul {
-    width: 100%;
-    z-index: 1000;
-  }
-}
-
 .main {
   /*Banner section start*/
   /*Banner section end*/
@@ -710,6 +680,151 @@ header .header .header__items .header__nav ul li:hover ul {
   color: #6f42c1;
 }
 
+/*MAIN MEDIA QUERY START*/
+@media (max-width: 1100px) {
+  .main {
+    /*Banner section start*/
+    /*Banner section end*/
+    /*Coronavirus Statistics Section start*/
+    /*Coronavirus Statistics Section end*/
+    /*What is coronavirus section start end*/
+    /*What is coronavirus section end*/
+    /*How to prevent coronavirus section start*/
+    /*How to prevent coronavirus section end*/
+    /*How To Protect Yourself section start */
+    /*How To Protect Yourself section end*/
+    /*Symptoms of coronavirus section start*/
+    /*Symptoms of coronavirus section end*/
+    /*News & Article section start*/
+    /*News & Article section end*/
+  }
+  .main .section__banner .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main .section__banner .banner .banner__text-area a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    background-color: #6f42c1;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  .main section .corona-statist {
+    margin-right: 10rem;
+  }
+  .main section .corona-statist .corona-statist__datas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main section .corona-statist .corona-statist__datas .corona-statist__datas-active-cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main section .w-is-coronavirus .w-is-coronavirus__img-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main section .w-is-coronavirus .w-is-coronavirus__img-texts .w-is-coronavirus__img .w-is-coronavirus__play-btn {
+    position: relative;
+  }
+  .main section .w-is-coronavirus .w-is-coronavirus-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main section .w-is-coronavirus .w-is-coronavirus-features .w-is-coronavirus-features__protection {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .main .how-to-pre-corona__section .how-to-pre-corona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  .main .how-to-pre-corona__section .how-to-pre-corona .how-to-pre-corona__text-area {
+    margin-top: 5rem;
+  }
+  .main .how-to-pre-corona__section .how-to-pre-corona .how-to-pre-corona__text-area p:nth-of-type(1) {
+    width: 50rem;
+  }
+  .main section .how-to-pro-yourself .how-to-pro-yourself__text-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main section .how-to-pro-yourself .how-to-pro-yourself__text-area p {
+    width: 50rem;
+  }
+  .main section .how-to-pro-yourself .how-to-pro-yourself__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8.5rem;
+  }
+  .main section .how-to-pro-yourself .how-to-pro-yourself__div .how-to-pro-yourself__check-list {
+    display: flex;
+  }
+  .main .symptoms-of-corona__section {
+    background-color: rgba(111, 66, 193, 0.1);
+  }
+  .main .symptoms-of-corona__section .symptoms-of-corona .symptoms-of-corona__text-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main .symptoms-of-corona__section .symptoms-of-corona .symptoms-of-corona__cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main .symptoms-of-corona__section .symptoms-of-corona .symptoms-of-corona__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 11rem;
+  }
+  .main .symptoms-of-corona__section .symptoms-of-corona .symptoms-of-corona__footer p {
+    font-size: 1.6rem;
+    color: #aaaaaa;
+    line-height: 1.5;
+  }
+  .main .symptoms-of-corona__section .symptoms-of-corona .symptoms-of-corona__footer p strong {
+    color: #6f42c1;
+  }
+  .main .symptoms-of-corona__section .symptoms-of-corona .symptoms-of-corona__footer .symptoms-of-corona__footer__btn {
+    margin-top: 2rem;
+  }
+  .main section .news-and-articles .news-and-articles__text-area {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .main section .news-and-articles .news-and-articles__blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/*MAIN MEDIA QUERY End*/
 /*==========FOOTER START==========*/
 footer .footer {
   width: 110rem;
@@ -775,4 +890,41 @@ footer .footer .footer__copyright p i {
 }
 
 /*==========FOOTER END==========*/
+/*Footer media query start*/
+@media (max-width: 1100px) {
+  footer .footer .footer__features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer .footer__features .footer__features__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer .footer__features .footer__features__about .footer__features__social-icons {
+    margin-bottom: 2rem;
+  }
+  footer .footer .footer__features .footer__features__style ul {
+    margin-bottom: 2rem;
+  }
+  footer .footer .footer__copyright {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  footer .footer .footer__copyright p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  footer .footer .footer__copyright p i {
+    font-size: 1.6rem;
+    color: red;
+    margin-right: 0.3rem;
+  }
+}
+
+/*Footer media query end*/
 /*# sourceMappingURL=main.css.map */
