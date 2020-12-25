@@ -47,7 +47,7 @@
 					<nav class="header__nav">
 						<ul>
 							<li><a href="#">Home</a></li>
-							<li>
+							<li class="header__nav__dropdown-menu">
 								<a href="#">Prevention</a><i class="fas fa-chevron-down"></i>
 								<!-- Prevention dropdown menu start -->
 								<ul>
@@ -55,16 +55,7 @@
 									<li><a href="#">Keep social distancing</a></li>
 									<li><a href="#">Wear facemask</a></li>
 									<li><a href="#">Wash your hands</a></li>
-									<li>
-										<a href="#"
-											>More links<i class="fas fa-chevron-right"></i
-										></a>
-										<ul>
-											<li><a href="#">Menu One</a></li>
-											<li><a href="#">Menu Two</a></li>
-											<li><a href="#">Menu Three</a></li>
-										</ul>
-									</li>
+									<li><a href="#">More links</a></li>
 								</ul>
 								<!-- Prevention dropdown menu end -->
 							</li>
@@ -82,183 +73,177 @@
 		<!--============================= HEADER END ================================-->
 		<!--=========================================================================-->
 
-		<!--=========================================================================-->
-		<!--============================= MAIN START ================================-->
-		<!--=========================================================================-->
-		<main>
-			<div class="main">
-				<!-- Banner section start -->
-				<section>
-					<div class="banner">
-						<div class="banner__text-area">
-							<p>Covid-19 Awareness</p>
-							<h1>Stay Safe. Stay Home.</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a,
-								nulla incidunt eaque sit praesentium porro consectetur optio!
-							</p>
-							<a href="#">HOW TO PREVENT</a>
-						</div>
-						<div class="banner__image">
+		<div class="main">
+			<!-- Banner section start -->
+			<section class="section__banner">
+				<div class="banner">
+					<div class="banner__text-area">
+						<p>Covid-19 Awareness</p>
+						<h1>Stay Safe. Stay Home.</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a,
+							nulla incidunt eaque sit praesentium porro consectetur optio!
+						</p>
+						<a href="#">HOW TO PREVENT</a>
+					</div>
+					<div class="banner__image">
+						<figure>
+							<img src="/images/illustration.png" alt="facemask persons" />
+						</figure>
+					</div>
+				</div>
+			</section>
+			<!-- Banner section end -->
+
+			<!-- Coronavirus Statistics Section Start -->
+			<section>
+				<div class="corona-statist">
+					<div class="corona-statist__text-area">
+						<h2>Coronavirus Statistics</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+							voluptate!
+						</p>
+					</div>
+					<div class="corona-statist__datas">
+						<!-- Active cases start -->
+						<div class="corona-statist__datas-active-cases">
 							<figure>
-								<img src="/images/illustration.png" alt="facemask persons" />
+								<img src="/images/icons/virus.svg" alt="coronavirus icon" />
 							</figure>
+							<strong>14,112,077</strong>
+							<span>ACTIVE CASE</span>
 						</div>
-					</div>
-				</section>
-				<!-- Banner section end -->
+						<!-- Active cases end -->
 
-				<!-- Coronavirus Statistics Section Start -->
-				<section>
-					<div class="corona-statist">
-						<div class="corona-statist__text-area">
-							<h2>Coronavirus Statistics</h2>
+						<!-- Deaths start -->
+						<div class="corona-statist__datas-active-cases">
+							<figure>
+								<img src="/images/icons/virus.svg" alt="coronavirus icon" />
+							</figure>
+							<strong>595,685</strong>
+							<span>DEATH</span>
+						</div>
+						<!-- Deaths end -->
+
+						<!-- Recovered cases start -->
+						<div class="corona-statist__datas-active-cases">
+							<figure>
+								<img src="/images/icons/virus.svg" alt="coronavirus icon" />
+							</figure>
+
+							<strong>8,397,665</strong>
+							<span>RECOVERED CASES</span>
+						</div>
+						<!-- Recovered cases end -->
+					</div>
+				</div>
+			</section>
+			<!-- Coronavirus Statictics Section End -->
+
+			<!-- What is coronavirus section start -->
+			<section>
+				<div class="w-is-coronavirus">
+					<div class="w-is-coronavirus__img-texts">
+						<div class="w-is-coronavirus__img">
+							<figure>
+								<img src="/images/hero_1.jpg" alt="facemask wearing man" />
+							</figure>
+							<div class="w-is-coronavirus__play-btn">
+								<span>Watch the Video</span>
+								<a href="#"><i class="fas fa-play"></i></a>
+							</div>
+						</div>
+						<div class="w-is-coronavirus__text-area">
+							<h2>What is Coronavirus?</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
-								voluptate!
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Exofficia quas, modi sit eligendi numquam!
 							</p>
-						</div>
-						<div class="corona-statist__datas">
-							<!-- Active cases start -->
-							<div class="corona-statist__datas-active-cases">
-								<figure>
-									<img src="/images/icons/virus.svg" alt="coronavirus icon" />
-								</figure>
-								<strong>14,112,077</strong>
-								<span>ACTIVE CASE</span>
-							</div>
-							<!-- Active cases end -->
 
-							<!-- Deaths start -->
-							<div class="corona-statist__datas-active-cases">
-								<figure>
-									<img src="/images/icons/virus.svg" alt="coronavirus icon" />
-								</figure>
-								<strong>595,685</strong>
-								<span>DEATH</span>
+							<div class="w-is-coronavirus__text-area__check-list">
+								<div class="w-is-coronavirus__text-area__check-list-group">
+									<i class="fas fa-check-circle"></i>
+									<p>Lorem ipsum dolor sit amet</p>
+								</div>
+								<div class="w-is-coronavirus__text-area__check-list-group">
+									<i class="fas fa-check-circle"></i>
+									<p>Consectetur adipisicing elit</p>
+								</div>
+								<div class="w-is-coronavirus__text-area__check-list-group">
+									<i class="fas fa-check-circle"></i>
+									<p>Unde doloremque</p>
+								</div>
 							</div>
-							<!-- Deaths end -->
-
-							<!-- Recovered cases start -->
-							<div class="corona-statist__datas-active-cases">
-								<figure>
-									<img src="/images/icons/virus.svg" alt="coronavirus icon" />
-								</figure>
-
-								<strong>8,397,665</strong>
-								<span>RECOVERED CASES</span>
+							<div class="w-is-coronavirus__text-area__btn">
+								<a href="#">LEARN MORE</a>
 							</div>
-							<!-- Recovered cases end -->
 						</div>
 					</div>
-				</section>
-				<!-- Coronavirus Statictics Section End -->
-
-				<!-- What is coronavirus section start -->
-				<section>
-					<div class="w-is-coronavirus">
-						<div class="w-is-coronavirus__img-texts">
-							<div class="w-is-coronavirus__img">
-								<figure>
-									<img src="/images/hero_1.jpg" alt="facemask wearing man" />
-								</figure>
-								<div class="w-is-coronavirus__play-btn">
-									<span>Watch the Video</span>
-									<a href="#"><i class="fas fa-play"></i></a>
-								</div>
-							</div>
-							<div class="w-is-coronavirus__text-area">
-								<h2>What is Coronavirus?</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Exofficia quas, modi sit eligendi numquam!
-								</p>
-
-								<div class="w-is-coronavirus__text-area__check-list">
-									<div class="w-is-coronavirus__text-area__check-list-group">
-										<i class="fas fa-check-circle"></i>
-										<p>Lorem ipsum dolor sit amet</p>
-									</div>
-									<div class="w-is-coronavirus__text-area__check-list-group">
-										<i class="fas fa-check-circle"></i>
-										<p>Consectetur adipisicing elit</p>
-									</div>
-									<div class="w-is-coronavirus__text-area__check-list-group">
-										<i class="fas fa-check-circle"></i>
-										<p>Unde doloremque</p>
-									</div>
-								</div>
-								<div class="w-is-coronavirus__text-area__btn">
-									<a href="#">LEARN MORE</a>
-								</div>
+					<!-- What is coronavirus features start -->
+					<div class="w-is-coronavirus-features">
+						<!-- Protection start -->
+						<div class="w-is-coronavirus-features__protection">
+							<figure>
+								<img src="/images/icons/protection.svg" alt="protection icon" />
+							</figure>
+							<div class="w-is-coronavirus-features__protection__texts">
+								<h3>Protection</h3>
+								<p>Lorem ipsum dolar sit.</p>
 							</div>
 						</div>
-						<!-- What is coronavirus features start -->
-						<div class="w-is-coronavirus-features">
-							<!-- Protection start -->
-							<div class="w-is-coronavirus-features__protection">
-								<figure>
-									<img
-										src="/images/icons/protection.svg"
-										alt="protection icon"
-									/>
-								</figure>
-								<div class="w-is-coronavirus-features__protection__texts">
-									<h3>Protection</h3>
-									<p>Lorem ipsum dolar sit.</p>
-								</div>
-							</div>
-							<!-- Protection end -->
+						<!-- Protection end -->
 
-							<!-- Prevention start -->
-							<div class="w-is-coronavirus-features__protection">
-								<figure>
-									<img src="/images/icons/mask.svg" alt="facemask man icon" />
-								</figure>
-								<div class="w-is-coronavirus-features__protection__texts">
-									<h3>Prevention</h3>
-									<p>Lorem ipsum dolar sit.</p>
-								</div>
+						<!-- Prevention start -->
+						<div class="w-is-coronavirus-features__protection">
+							<figure>
+								<img src="/images/icons/mask.svg" alt="facemask man icon" />
+							</figure>
+							<div class="w-is-coronavirus-features__protection__texts">
+								<h3>Prevention</h3>
+								<p>Lorem ipsum dolar sit.</p>
 							</div>
-							<!-- Prevention end -->
-
-							<!-- Treatments start -->
-							<div class="w-is-coronavirus-features__protection">
-								<figure>
-									<img
-										src="/images/icons/antibacterial.svg"
-										alt="anti bacterial"
-									/>
-								</figure>
-								<div class="w-is-coronavirus-features__protection__texts">
-									<h3>Treatments</h3>
-									<p>Lorem ipsum dolar sit.</p>
-								</div>
-							</div>
-							<!-- Treatments end -->
-
-							<!-- Symptoms start -->
-							<div class="w-is-coronavirus-features__protection">
-								<figure>
-									<img src="/images/icons/virus.svg" alt="coronavirus icon" />
-								</figure>
-								<div class="w-is-coronavirus-features__protection__texts">
-									<h3>Symptoms</h3>
-									<p>Lorem ipsum dolar sit.</p>
-								</div>
-							</div>
-							<!-- Symptoms end -->
 						</div>
-						<!-- What is coronavirus features end -->
+						<!-- Prevention end -->
+
+						<!-- Treatments start -->
+						<div class="w-is-coronavirus-features__protection">
+							<figure>
+								<img
+									src="/images/icons/antibacterial.svg"
+									alt="anti bacterial"
+								/>
+							</figure>
+							<div class="w-is-coronavirus-features__protection__texts">
+								<h3>Treatments</h3>
+								<p>Lorem ipsum dolar sit.</p>
+							</div>
+						</div>
+						<!-- Treatments end -->
+
+						<!-- Symptoms start -->
+						<div class="w-is-coronavirus-features__protection">
+							<figure>
+								<img src="/images/icons/virus.svg" alt="coronavirus icon" />
+							</figure>
+							<div class="w-is-coronavirus-features__protection__texts">
+								<h3>Symptoms</h3>
+								<p>Lorem ipsum dolar sit.</p>
+							</div>
+						</div>
+						<!-- Symptoms end -->
 					</div>
-				</section>
-				<!-- What is coronavirus section end -->
+					<!-- What is coronavirus features end -->
+				</div>
+			</section>
+			<!-- What is coronavirus section end -->
 
-				<!-- How to prevent coronavirus section start -->
-				<section>
-					<div class="how-to-pre-corona">
-						<div class="how-to-pre-corona__cards">
-							<!-- Stay at home card start -->
+			<!-- How to prevent coronavirus section start -->
+			<section class="how-to-pre-corona__section">
+				<div class="how-to-pre-corona">
+					<div class="how-to-pre-corona__cards">
+						<!-- Stay at home card start -->
+						<div class="how-to-pre-corona__card-left">
 							<div class="how-to-pre-corona__card">
 								<div class="how-to-pre-corona__card__header">
 									<figure>
@@ -296,9 +281,11 @@
 									</p>
 								</div>
 							</div>
-							<!-- Keep social distancing card end -->
+						</div>
+						<!-- Keep social distancing card end -->
 
-							<!-- Wear facemask card start -->
+						<!-- Wear facemask card start -->
+						<div class="how-to-pre-corona__card-right">
 							<div class="how-to-pre-corona__card">
 								<div class="how-to-pre-corona__card__header">
 									<figure>
@@ -333,50 +320,55 @@
 									</p>
 								</div>
 							</div>
-							<!-- Wash your hands card end -->
 						</div>
-						<div class="how-to-pre-corona__text-area">
-							<h2>How to Prevent Coronavirus?</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-								corporis doloribus consequatur fugit voluptatum ex rerum
-								perspiciatis cupiditate, esse hic!
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Voluptas, error!
-							</p>
-							<div class="how-to-pre-corona__text-area__check-list">
-								<div class="how-to-pre-corona__text-area__check-list-group">
-									<i class="fas fa-check-circle"></i>
-									<p>Lorem ipsum dolor sit amet</p>
-								</div>
-								<div class="how-to-pre-corona__text-area__check-list-group">
-									<i class="fas fa-check-circle"></i>
-									<p>Consectetur adipisicing elit</p>
-								</div>
-								<div class="how-to-pre-corona__text-area__check-list-group">
-									<i class="fas fa-check-circle"></i>
-									<p>Unde doloremque</p>
-								</div>
+						<!-- Wash your hands card end -->
+					</div>
+					<div class="how-to-pre-corona__text-area">
+						<h2>How to Prevent Coronavirus?</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+							corporis doloribus consequatur fugit voluptatum ex rerum
+							perspiciatis cupiditate, esse hic!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Voluptas, error!
+						</p>
+						<div class="how-to-pre-corona__text-area__check-list">
+							<div class="how-to-pre-corona__text-area__check-list-group">
+								<i class="fas fa-check-circle"></i>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="how-to-pre-corona__text-area__check-list-group">
+								<i class="fas fa-check-circle"></i>
+								<p>Consectetur adipisicing elit</p>
+							</div>
+							<div class="how-to-pre-corona__text-area__check-list-group">
+								<i class="fas fa-check-circle"></i>
+								<p>Unde doloremque</p>
 							</div>
 						</div>
-					</div>
-				</section>
-				<!-- How to prevent coronavirus section end -->
-
-				<!-- How To Protect Yourself section Start -->
-				<section>
-					<div class="how-to-pro-yourself">
-						<div class="how-to-pro-yourself__text-area">
-							<p>What you need to do</p>
-							<h2>How To Protect Yourself</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-								officia quas, modi sit eligendi numquam!
-							</p>
+						<div class="how-to-pre-corona__text-area__btn">
+							<a href="#">Read more about prevention</a>
 						</div>
-						<!-- How To Protect Yourself Check List section Start -->
+					</div>
+				</div>
+			</section>
+			<!-- How to prevent coronavirus section end -->
+
+			<!-- How To Protect Yourself section Start -->
+			<section>
+				<div class="how-to-pro-yourself">
+					<div class="how-to-pro-yourself__text-area">
+						<p>What you need to do</p>
+						<h2>How To Protect Yourself</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+							officia quas, modi sit eligendi numquam!
+						</p>
+					</div>
+					<!-- How To Protect Yourself Check List section Start -->
+					<div class="how-to-pro-yourself__div">
 						<div class="how-to-pro-yourself__check-list">
 							<div class="how-to-pro-yourself__check-list__positive">
 								<h3>You should do</h3>
@@ -415,188 +407,185 @@
 							</figure>
 						</div>
 					</div>
-				</section>
-				<!-- How To Protect Yourself section end -->
+				</div>
+			</section>
+			<!-- How To Protect Yourself section end -->
 
-				<!-- Symptoms of coronavirus section start -->
-				<section>
-					<div class="symptoms-of-corona">
-						<div class="symptoms-of-corona__text-area">
-							<h2>Symptoms of Coronavirus</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-								officia quas, modi sit eligendi numquam!
-							</p>
+			<!-- Symptoms of coronavirus section start -->
+			<section class="symptoms-of-corona__section">
+				<div class="symptoms-of-corona">
+					<div class="symptoms-of-corona__text-area">
+						<h2>Symptoms of Coronavirus</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+							officia quas, modi siteligendi numquam!
+						</p>
+					</div>
+					<div class="symptoms-of-corona__cases">
+						<!-- High Fever Man Start -->
+						<div class="symptoms-of-corona__case">
+							<figure>
+								<img src="images/symptom_high-fever.png" alt="high fever man" />
+							</figure>
+							<div class="symptoms-of-corona__text-area">
+								<h3>High Fever</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Nostrum ipsum repellendus animi modi iure provident,
+									cupiditate perferendis voluptatem!
+								</p>
+							</div>
 						</div>
-						<div class="symptoms-of-corona__cases">
-							<!-- High Fever Man Start -->
-							<div class="symptoms-of-corona__case">
-								<figure>
-									<img
-										src="images/symptom_high-fever.png"
-										alt="high fever man"
-									/>
-								</figure>
-								<div class="symptoms-of-corona__text-area">
-									<h3>High Fever</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										Nostrum ipsum repellendus animi modi iure provident,
-										cupiditate perferendis voluptatem!
-									</p>
-								</div>
-							</div>
-							<!-- High Fever Man End -->
+						<!-- High Fever Man End -->
 
-							<!-- Cough Man Start -->
-							<div class="symptoms-of-corona__case">
-								<figure>
-									<img src="images/symptom_cough.png" alt="cough man" />
-								</figure>
-								<div class="symptoms-of-corona__text-area">
-									<h3>High Fever</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										Nulla ullam illo laborum repellendus vel esse dolor, sunt
-										exercitationem.
-									</p>
-								</div>
+						<!-- Cough Man Start -->
+						<div class="symptoms-of-corona__case">
+							<figure>
+								<img src="images/symptom_cough.png" alt="cough man" />
+							</figure>
+							<div class="symptoms-of-corona__text-area">
+								<h3>High Fever</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Nulla ullam illo laborum repellendus vel esse dolor, sunt
+									exercitationem.
+								</p>
 							</div>
-							<!-- Cough Man End -->
-
-							<!-- Sore Troath Start -->
-							<div class="symptoms-of-corona__case">
-								<figure>
-									<img
-										src="images/symptom_sore-troath.png"
-										alt="sore troath man"
-									/>
-								</figure>
-								<div class="symptoms-of-corona__text-area">
-									<h3>High Fever</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										Illum esse voluptatum, vel inventore at! Ullam, libero
-										reiciendis amet?
-									</p>
-								</div>
-							</div>
-							<!-- Sore Troath End -->
-
-							<!-- Headache Start -->
-							<div class="symptoms-of-corona__case">
-								<figure>
-									<img src="images/symptom_headache.png" alt="headache man" />
-								</figure>
-								<div class="symptoms-of-corona__text-area">
-									<h3>High Fever</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										Illum esse voluptatum, vel inventore at! Ullam, libero
-										reiciendis amet?
-									</p>
-								</div>
-							</div>
-							<!-- Headache End -->
 						</div>
-						<div class="symptoms-of-corona__footer">
-							<p>
-								<strong>Stay at home and call your doctor:</strong> Lorem ipsum
-								dolor sit amet, consectetur adipisicing elit. Accusantium,
-								eaque.
-							</p>
+						<!-- Cough Man End -->
+
+						<!-- Sore Troath Start -->
+						<div class="symptoms-of-corona__case">
+							<figure>
+								<img
+									src="images/symptom_sore-troath.png"
+									alt="sore troath man"
+								/>
+							</figure>
+							<div class="symptoms-of-corona__text-area">
+								<h3>High Fever</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Illum esse voluptatum, vel inventore at! Ullam, libero
+									reiciendis amet?
+								</p>
+							</div>
+						</div>
+						<!-- Sore Troath End -->
+
+						<!-- Headache Start -->
+						<div class="symptoms-of-corona__case">
+							<figure>
+								<img src="images/symptom_headache.png" alt="headache man" />
+							</figure>
+							<div class="symptoms-of-corona__text-area">
+								<h3>High Fever</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Illum esse voluptatum, vel inventore at! Ullam, libero
+									reiciendis amet?
+								</p>
+							</div>
+						</div>
+						<!-- Headache End -->
+					</div>
+					<div class="symptoms-of-corona__footer">
+						<p>
+							<strong>Stay at home and call your doctor:</strong> Lorem ipsum
+							dolor sit amet, consectetur <br />
+							adipisicing elit. Accusantium, eaque.
+						</p>
+						<div class="symptoms-of-corona__footer__btn">
 							<a href="#"><i class="fas fa-phone-alt"></i>HELP LINE</a>
 						</div>
 					</div>
-				</section>
-				<!-- Symptoms of coronavirus section end -->
+				</div>
+			</section>
+			<!-- Symptoms of coronavirus section end -->
 
-				<!-- News & Article section start -->
-				<section>
-					<div class="news-and-articles">
-						<div class="news-and-articles__text-area">
-							<h2>News & Article</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-								officia quas, modi sit eligendi numquam!
-							</p>
+			<!-- News & Article section start -->
+			<section>
+				<div class="news-and-articles">
+					<div class="news-and-articles__text-area">
+						<h2>News & Article</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+							officia quas, modi sit <br />
+							eligendi numquam!
+						</p>
+					</div>
+					<div class="news-and-articles__blogs">
+						<div class="news-and-articles__blog">
+							<div class="news-and-articles__blog__img-box">
+								<figure>
+									<img src="/images/hero_1.jpg" alt="man wearing facemask" />
+								</figure>
+								<time datetime="2020-06-30 11:00">30 JUN, 2020</time>
+							</div>
+							<div class="news-and-articles__blog__admin-comments">
+								<div class="news-and-articles__blog__admin">
+									<i class="fas fa-user-shield"></i>
+									<span>ADMIN</span>
+								</div>
+								<div class="news-and-articles__blog__admin">
+									<i class="fas fa-comment"></i>
+									<span>3</span>
+									<span>COMMENTS</span>
+								</div>
+							</div>
+							<div class="news-and-articles__blog__h3">
+								<h3>How Coronavirus Very Contigous</h3>
+							</div>
 						</div>
-						<div class="news-and-articles__blogs">
-							<div class="news-and-articles__blog">
-								<div class="news-and-articles__blog__img-box">
-									<figure>
-										<img src="/images/hero_1.jpg" alt="man wearing facemask" />
-									</figure>
-									<time datetime="2020-06-30 11:00">30 JUN, 2020</time>
+						<div class="news-and-articles__blog">
+							<div class="news-and-articles__blog__img-box">
+								<figure>
+									<img src="/images/hero_2.jpg" alt="man wearing facemask" />
+								</figure>
+								<time datetime="2020-06-30 11:00">30 JUN, 2020</time>
+							</div>
+							<div class="news-and-articles__blog__admin-comments">
+								<div class="news-and-articles__blog__admin">
+									<i class="fas fa-user-shield"></i>
+									<span>ADMIN</span>
 								</div>
-								<div class="news-and-articles__blog__admin-comments">
-									<div class="news-and-articles__blog__admin">
-										<i class="fas fa-user-shield"></i>
-										<span>ADMIN</span>
-									</div>
-									<div class="news-and-articles__blog__comments">
-										<i class="fas fa-comment"></i>
-										<span>3</span>
-										<span>COMMENTS</span>
-									</div>
-								</div>
-								<div class="news-and-articles__blog__h3">
-									<h3>How Coronavirus Very Contigous</h3>
+								<div class="news-and-articles__blog__admin">
+									<i class="fas fa-comment"></i>
+									<span>3</span>
+									<span>COMMENTS</span>
 								</div>
 							</div>
-							<div class="news-and-articles__blog">
-								<div class="news-and-articles__blog__img-box">
-									<figure>
-										<img src="/images/hero_2.jpg" alt="man wearing facemask" />
-									</figure>
-									<time datetime="2020-06-30 11:00">30 JUN, 2020</time>
+							<div class="news-and-articles__blog__h3">
+								<h3>How Coronavirus Very Contigous</h3>
+							</div>
+						</div>
+						<div class="news-and-articles__blog">
+							<div class="news-and-articles__blog__img-box">
+								<figure>
+									<img src="/images/hero_1.jpg" alt="man wearing facemask" />
+								</figure>
+								<time datetime="2020-06-30 11:00">30 JUN, 2020</time>
+							</div>
+							<div class="news-and-articles__blog__admin-comments">
+								<div class="news-and-articles__blog__admin">
+									<i class="fas fa-user-shield"></i>
+									<span>ADMIN</span>
 								</div>
-								<div class="news-and-articles__blog__admin-comments">
-									<div class="news-and-articles__blog__admin">
-										<i class="fas fa-user-shield"></i>
-										<span>ADMIN</span>
-									</div>
-									<div class="news-and-articles__blog__comments">
-										<i class="fas fa-comment"></i>
-										<span>3</span>
-										<span>COMMENTS</span>
-									</div>
-								</div>
-								<div class="news-and-articles__blog__h3">
-									<h3>How Coronavirus Very Contigous</h3>
+								<div class="news-and-articles__blog__admin">
+									<i class="fas fa-comment"></i>
+									<span>3</span>
+									<span>COMMENTS</span>
 								</div>
 							</div>
-							<div class="news-and-articles__blog">
-								<div class="news-and-articles__blog__img-box">
-									<figure>
-										<img src="/images/hero_1.jpg" alt="man wearing facemask" />
-									</figure>
-									<time datetime="2020-06-30 11:00">30 JUN, 2020</time>
-								</div>
-								<div class="news-and-articles__blog__admin-comments">
-									<div class="news-and-articles__blog__admin">
-										<i class="fas fa-user-shield"></i>
-										<span>ADMIN</span>
-									</div>
-									<div class="news-and-articles__blog__comments">
-										<i class="fas fa-comment"></i>
-										<span>3</span>
-										<span>COMMENTS</span>
-									</div>
-								</div>
-								<div class="news-and-articles__blog__h3">
-									<h3>How Coronavirus Very Contigous</h3>
-								</div>
+							<div class="news-and-articles__blog__h3">
+								<h3>How Coronavirus Very Contigous</h3>
 							</div>
 						</div>
 					</div>
-				</section>
-				<!-- News & Article section end -->
-			</div>
-		</main>
-		<!--=========================================================================-->
-		<!--============================= MAIN END ==================================-->
-		<!--=========================================================================-->
+				</div>
+			</section>
+			<!-- News & Article section end -->
+		</div>
 
 		<!--=========================================================================-->
 		<!--============================= FOOTER START ==============================-->
@@ -608,9 +597,10 @@
 					<div class="footer__features__about">
 						<h3>About</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-							cumque tenetur inventore veniam, hic vel ipsa necessitatibus
-							ducimus architecto fugiat!
+							Lorem ipsum dolor sit amet, consectetur <br />
+							adipisicing elit. Modi cumque tenetur inventore <br />
+							veniam, hic vel ipsa necessitatibus ducimus <br />
+							architecto fugiat!
 						</p>
 						<div class="footer__features__social-icons">
 							<i class="fab fa-facebook-f"></i>
@@ -622,7 +612,7 @@
 					<!-- Footer About End -->
 
 					<!-- Footer Quick Links start -->
-					<div class="footer__features__quick-links">
+					<div class="footer__features__style">
 						<h3>Quick Links</h3>
 						<ul>
 							<li><a href="#">Symptoms</a></li>
@@ -635,7 +625,7 @@
 					<!-- Footer Quick Links end -->
 
 					<!-- Footer Helpful Link start -->
-					<div class="footer__features__helpful-link">
+					<div class="footer__features__style">
 						<h3>Helpful Link</h3>
 						<ul>
 							<li><a href="#">Helathcare Professional</a></li>
@@ -647,7 +637,7 @@
 					<!-- Footer Helpful Link end -->
 
 					<!-- Footer Resources start -->
-					<div class="footer__features__resources">
+					<div class="footer__features__style">
 						<h3>Resources</h3>
 						<ul>
 							<li><a href="#">WHO Website</a></li>
@@ -661,7 +651,8 @@
 				<div class="footer__copyright">
 					<p>
 						Copyright ©2020 All rights reserved | This template is made with
-						<i></i>by <a href="https://colorlib.com/">Colorlib</a>
+						<i class="fas fa-heart"></i>by
+						<a href="https://colorlib.com/">Colorlib</a>
 					</p>
 				</div>
 			</div>

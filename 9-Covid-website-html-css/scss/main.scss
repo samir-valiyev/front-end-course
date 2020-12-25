@@ -8,6 +8,7 @@ $purple: #6f42c1;
 $purple-light: rgba(111, 66, 193, 0.5);
 $purple-bg: rgba(111, 66, 193, 0.1);
 $p-color: rgb(128, 128, 128);
+$section-bg-color: rgba(111, 66, 193, 0.1);
 
 // fonts
 $font-mulish: "Mulish", sans-serif;
@@ -43,207 +44,687 @@ html {
 
 /*==========HEADER START==========*/
 header {
+	background-color: $section-bg-color;
 	.header {
 		width: 110rem;
 		margin: 0 auto;
+
+		.header__items {
+			display: flex;
+			justify-content: space-between;
+
+			// width: 100%;
+			height: 7rem;
+
+			.header__logo {
+				@include flex;
+				a {
+					font-size: 2rem;
+					font-weight: 700;
+					color: $black;
+				}
+			}
+
+			.header__nav {
+				display: flex;
+
+				align-items: center;
+
+				font-size: 1.6rem;
+				ul {
+					display: flex;
+					justify-content: flex-end;
+					max-width: 110rem;
+					margin: 0 auto;
+					padding: 0;
+					li {
+						position: relative;
+						padding: 1rem 0rem;
+						transition: 0.5s;
+						a {
+							padding: 0 2rem;
+						}
+						ul {
+							position: absolute;
+							background-color: $white;
+							top: 4rem;
+							left: 0;
+							display: block;
+							width: 20rem;
+							transition: 0.5s;
+							opacity: 0;
+							visibility: hidden;
+						}
+
+						&:hover ul {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 /*==========HEADER END==========*/
+@media (max-width: 768px) {
+	header {
+		.header {
+			.header__items {
+				.header__logo {
+					a {
+					}
+				}
 
-/*==========MAIN START==========*/
+				.header__nav {
+					ul {
+						display: block;
+						li {
+							display: block;
+							a {
+							}
 
-main {
-	.main {
-		width: 110rem;
-		margin: 0 auto;
+							a {
+								i {
+								}
+							}
 
-		/*Banner section start*/
-		section {
-			.banner {
+							ul {
+								width: 100%;
+								z-index: 1000;
+								li {
+									a {
+									}
+								}
+							}
+
+							&:hover ul {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.main {
+	/*Banner section start*/
+	.section__banner {
+		background-color: $section-bg-color;
+		border-bottom-right-radius: 50%;
+
+		.banner {
+			width: 110rem;
+			margin: 0 auto;
+			display: flex;
+			.banner__text-area {
+				p:nth-of-type(1) {
+					font-size: 12px;
+					text-transform: uppercase;
+					color: rgba(111, 66, 193, 0.5);
+					letter-spacing: 0.1rem;
+					font-weight: 900;
+					text-align: left;
+				}
+				h1 {
+					color: $purple;
+					font-weight: 900;
+					font-size: 4rem;
+					margin-bottom: 1.6rem;
+					text-align: left;
+				}
+
+				p:nth-of-type(2) {
+					line-height: 1.7;
+					color: $p-color;
+					font-weight: 400;
+					font-size: 1.6rem;
+					margin-bottom: 4.8rem;
+					text-align: left;
+				}
+				a {
+					@include btn;
+				}
+			}
+		}
+
+		.banner__image {
+			figure {
+				img {
+					width: 55.5rem;
+				}
+			}
+		}
+		margin-bottom: 7rem;
+	}
+	/*Banner section end*/
+
+	/*Coronavirus Statistics Section start*/
+	section {
+		.corona-statist {
+			.corona-statist__text-area {
+				h2 {
+					font-size: 3rem;
+					font-weight: 900;
+					margin-bottom: 0.8rem;
+					text-align: center;
+					color: $purple;
+				}
+				p {
+					font-size: 1.6rem;
+					font-weight: 400;
+					margin-bottom: 4rem;
+					text-align: center;
+					color: rgb(128, 128, 128);
+				}
+			}
+
+			.corona-statist__datas {
 				display: flex;
-				.banner__text-area {
-					p:nth-of-type(1) {
-						font-size: 12px;
-						text-transform: uppercase;
-						color: rgba(111, 66, 193, 0.5);
-						letter-spacing: 0.1rem;
-						font-weight: 900;
-						text-align: left;
-					}
-					h1 {
-						color: $purple;
-						font-weight: 900;
-						font-size: 4rem;
+				justify-content: space-around;
+
+				.corona-statist__datas-active-cases {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					figure {
+						img {
+							width: 3rem;
+						}
 						margin-bottom: 1.6rem;
-						text-align: left;
+					}
+					strong {
+						font-size: 3.2rem;
+						font-weight: 900;
+						margin-bottom: 1.6rem;
 					}
 
-					p:nth-of-type(2) {
-						line-height: 1.7;
-						color: $p-color;
-						font-weight: 400;
-						font-size: 1.6rem;
-						margin-bottom: 4.8rem;
-						text-align: left;
+					span {
+						font-size: 1.2rem;
+						font-weight: 700;
+						color: rgb(128, 128, 128);
 					}
+				}
+			}
+		}
+	}
+	/*Coronavirus Statistics Section end*/
+
+	/*What is coronavirus section start end*/
+	section {
+		.w-is-coronavirus {
+			width: 110rem;
+			margin: 0 auto;
+			margin-top: 4rem;
+			.w-is-coronavirus__img-texts {
+				display: flex;
+				.w-is-coronavirus__img {
+					figure {
+						img {
+							width: 54rem;
+						}
+					}
+
+					.w-is-coronavirus__play-btn {
+						position: relative;
+
+						span {
+							position: absolute;
+							bottom: 0;
+							right: 0;
+							font-size: 1.6rem;
+							margin-right: 8rem;
+							text-align: center;
+							color: $white;
+							margin-bottom: 1.6rem;
+						}
+						a {
+							position: absolute;
+							bottom: 0.2rem;
+							right: 0;
+							font-size: 1.6rem;
+							background-color: $purple;
+							color: $white;
+							padding: 2.5rem;
+							border: none;
+							outline: none;
+						}
+					}
+				}
+
+				.w-is-coronavirus__text-area {
+					margin-left: 9.5rem;
+					display: flex;
+					flex-direction: column;
+					h2 {
+						font-size: 3rem;
+						font-weight: 900;
+						margin-bottom: 2.4rem;
+						text-align: left;
+						color: $purple;
+					}
+					p:nth-of-type(1) {
+						font-size: 1.6rem;
+						font-weight: 400;
+						text-align: left;
+						color: rgb(128, 128, 128);
+					}
+					.w-is-coronavirus__text-area__check-list {
+						.w-is-coronavirus__text-area__check-list-group {
+							display: flex;
+							align-items: center;
+
+							margin-top: 1rem;
+
+							i {
+								// font-size: 1.5rem;
+								color: $purple;
+							}
+
+							p {
+								margin-left: 1rem;
+								font-size: 1.6rem;
+								padding: 0.5rem 0;
+							}
+						}
+					}
+					.w-is-coronavirus__text-area__btn {
+						margin-top: 5rem;
+						a {
+							@include btn;
+						}
+					}
+				}
+			}
+			.w-is-coronavirus-features {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				margin-top: 11rem;
+				margin-bottom: 5rem;
+
+				.w-is-coronavirus-features__protection {
+					display: flex;
+
+					figure {
+						margin-right: 2rem;
+						img {
+							width: 4rem;
+						}
+					}
+					.w-is-coronavirus-features__protection__texts {
+						h3 {
+							font-size: 1.6rem;
+							font-weight: 900;
+							color: $purple;
+						}
+						p {
+							font-size: 1.6rem;
+							font-weight: 400;
+							color: rgb(170, 170, 170);
+						}
+					}
+				}
+			}
+		}
+	}
+	/*What is coronavirus section end*/
+
+	/*How to prevent coronavirus section start*/
+	.how-to-pre-corona__section {
+		background-color: $section-bg-color;
+		.how-to-pre-corona {
+			width: 110rem;
+			margin: 0 auto;
+			margin-bottom: 4rem;
+
+			display: flex;
+			.how-to-pre-corona__cards {
+				display: flex;
+				flex-direction: wrap;
+				width: 55rem;
+				.how-to-pre-corona__card-left {
+					margin-top: 5rem;
+				}
+				.how-to-pre-corona__card {
+					margin: 1rem;
+
+					.how-to-pre-corona__card__header {
+						width: 25.5rem;
+						height: 14rem;
+						background-color: rgba(111, 66, 193, 0.2);
+						border-top-left-radius: 1rem;
+						border-top-right-radius: 1rem;
+						@include flex;
+						figure {
+							img {
+								width: 5rem;
+								color: rgb(111, 66, 193);
+							}
+						}
+					}
+					.how-to-pre-corona__card__main {
+						width: 25.5rem;
+						height: 16.1rem;
+						border-bottom-left-radius: 1rem;
+						border-bottom-right-radius: 1rem;
+						background-color: $white;
+						padding: 3rem;
+						h3 {
+							font-size: 1.8rem;
+							margin-bottom: 0.8rem;
+							color: $purple;
+							font-weight: 700;
+						}
+						p {
+							font-size: 1.4rem;
+							font-weight: 400;
+							color: rgb(170, 170, 170);
+							line-height: 2.3rem;
+						}
+					}
+				}
+			}
+
+			.how-to-pre-corona__text-area {
+				margin-top: 24rem;
+				margin-left: 10rem;
+				h2 {
+					font-size: 3rem;
+					font-weight: 900;
+					margin-bottom: 2.4rem;
+					color: $purple;
+				}
+				p:nth-of-type(1) {
+					font-size: 1.6rem;
+					font-weight: 400;
+					color: rgb(170, 170, 170);
+				}
+				p:nth-of-type(2) {
+					margin-top: 1rem;
+					font-size: 1.6rem;
+					font-weight: 400;
+					color: rgb(170, 170, 170);
+				}
+
+				.how-to-pre-corona__text-area__check-list {
+					margin-top: 2rem;
+					.how-to-pre-corona__text-area__check-list-group {
+						display: flex;
+						i {
+							font-size: 1.4rem;
+							margin-right: 1rem;
+							color: $purple;
+						}
+
+						p {
+							color: rgb(170, 170, 170);
+						}
+					}
+				}
+				.how-to-pre-corona__text-area__btn {
+					margin-top: 6rem;
 					a {
 						@include btn;
 					}
 				}
 			}
+		}
+	}
 
-			.banner__image {
-				figure {
-					img {
-						width: 55.5rem;
+	/*How to prevent coronavirus section end*/
+
+	/*How To Protect Yourself section start */
+	section {
+		.how-to-pro-yourself {
+			width: 110rem;
+			margin: 0 auto;
+
+			margin-top: 10rem;
+			.how-to-pro-yourself__text-area {
+				text-align: center;
+				p {
+					font-size: 1.6rem;
+					font-weight: 400;
+					color: rgb(170, 170, 170);
+				}
+				h2 {
+					font-size: 3rem;
+					font-weight: 900;
+					margin-bottom: 2.4rem;
+					color: $purple;
+				}
+			}
+			.how-to-pro-yourself__div {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 8.5rem;
+				.how-to-pro-yourself__check-list {
+					display: flex;
+
+					.how-to-pro-yourself__check-list__positive {
+						margin-right: 10rem;
+						h3 {
+							font-size: 1.6rem;
+							font-weight: 700;
+							margin-bottom: 3rem;
+						}
+
+						ul {
+							li {
+								font-size: 1.6rem;
+								font-weight: 400;
+								color: rgb(170, 170, 170);
+								margin-bottom: 1rem;
+								i {
+									color: rgb(168, 223, 101);
+									margin-right: 1rem;
+								}
+							}
+						}
+					}
+
+					.how-to-pro-yourself__check-list__negative {
+						h3 {
+							font-size: 1.6rem;
+							font-weight: 700;
+							margin-bottom: 3rem;
+						}
+
+						ul {
+							li {
+								font-size: 1.6rem;
+								font-weight: 400;
+								color: rgb(170, 170, 170);
+								margin-bottom: 1rem;
+								i {
+									color: rgb(232, 74, 95);
+									margin-right: 1rem;
+								}
+							}
+						}
+					}
+				}
+
+				.how-to-pro-yourself__img {
+					figure {
+						img {
+							width: 54rem;
+						}
 					}
 				}
 			}
-			margin-bottom: 7rem;
 		}
-		/*Banner section end*/
+	}
+	/*How To Protect Yourself section end*/
 
-		/*Coronavirus Statistics Section start*/
-		section {
-			.corona-statist {
-				.corona-statist__text-area {
-					h2 {
-						font-size: 3rem;
-						font-weight: 900;
-						margin-bottom: 0.8rem;
-						text-align: center;
+	/*Symptoms of coronavirus section start*/
+	.symptoms-of-corona__section {
+		background-color: $section-bg-color;
+		.symptoms-of-corona {
+			width: 110rem;
+			margin: 0 auto;
+			padding-top: 5rem;
+
+			.symptoms-of-corona__text-area {
+				h2 {
+					font-size: 3rem;
+					font-weight: 900;
+					margin-bottom: 2.4rem;
+					text-align: center;
+					color: $purple;
+				}
+				p:nth-of-type(1) {
+					font-size: 1.6rem;
+					font-weight: 400;
+					margin-bottom: 1.6rem;
+					color: rgb(170, 170, 170);
+					text-align: center;
+				}
+			}
+
+			.symptoms-of-corona__cases {
+				display: flex;
+				flex-wrap: wrap;
+				.symptoms-of-corona__case {
+					display: flex;
+					width: 53rem;
+					height: 16.5rem;
+					background-color: $white;
+					box-shadow: 10px 10px 10px 10px rgba(111, 66, 193, 0.05);
+					margin: 1rem;
+					padding: 3rem;
+					figure {
+						img {
+							width: 8rem;
+						}
+					}
+					.symptoms-of-corona__text-area {
+						margin-left: 3rem;
+						h3 {
+							font-size: 1.6rem;
+							font-weight: 700;
+							margin-bottom: 0.8rem;
+						}
+						p {
+							text-align: left;
+						}
+					}
+				}
+			}
+
+			.symptoms-of-corona__footer {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 5rem;
+				margin-left: 11rem;
+				p {
+					font-size: 1.6rem;
+					color: rgb(170, 170, 170);
+					line-height: 1.5;
+					strong {
 						color: $purple;
 					}
-					p {
-						font-size: 1.6rem;
-						font-weight: 400;
-						margin-bottom: 4rem;
-						text-align: center;
-						color: rgb(128, 128, 128);
-					}
 				}
+				.symptoms-of-corona__footer__btn {
+					a {
+						@include btn;
 
-				.corona-statist__datas {
-					display: flex;
-					justify-content: space-around;
-
-					.corona-statist__datas-active-cases {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						figure {
-							img {
-								width: 3rem;
-							}
-							margin-bottom: 1.6rem;
-						}
-						strong {
-							font-size: 3.2rem;
-							font-weight: 900;
-							margin-bottom: 1.6rem;
-						}
-
-						span {
-							font-size: 1.2rem;
-							font-weight: 700;
-							color: rgb(128, 128, 128);
+						i {
+							margin-right: 1rem;
 						}
 					}
 				}
 			}
 		}
-		/*Coronavirus Statistics Section end*/
+	}
+	/*Symptoms of coronavirus section end*/
 
-		/*What is coronavirus section start end*/
-		section {
-			.w-is-coronavirus {
-				.w-is-coronavirus__img-texts {
-					display: flex;
-					.w-is-coronavirus__img {
+	/*News & Article section start*/
+	section {
+		margin-bottom: 5rem;
+		.news-and-articles {
+			width: 110rem;
+			margin: 0 auto;
+
+			.news-and-articles__text-area {
+				text-align: center;
+				margin-bottom: 7rem;
+
+				h2 {
+					font-size: 3rem;
+					font-weight: 900;
+					margin-bottom: 2.4rem;
+					color: $purple;
+				}
+
+				p {
+					font-size: 1.6rem;
+					font-weight: 400;
+					margin-bottom: 1.6rem;
+					color: rgb(170, 170, 170);
+				}
+			}
+
+			.news-and-articles__blogs {
+				margin-bottom: 23rem;
+				display: flex;
+				justify-content: space-between;
+				.news-and-articles__blog {
+					.news-and-articles__blog__img-box {
+						position: relative;
+						text-align: center;
 						figure {
 							img {
-								width: 54rem;
+								width: 34rem;
 							}
 						}
 
-						.w-is-coronavirus__play-btn {
-							position: relative;
+						time {
+							position: absolute;
+							bottom: -0.2rem;
+							left: 12rem;
+							font-size: 1.2rem;
+							color: $white;
+							background-color: $purple;
+							padding: 0.5rem 1.5rem;
+						}
+					}
 
-							span {
-								position: absolute;
-								bottom: 0;
-								right: 0;
-								font-size: 1.6rem;
-								margin-right: 8rem;
-								text-align: center;
-								color: $white;
-								margin-bottom: 1.6rem;
+					.news-and-articles__blog__admin-comments {
+						@include flex;
+						margin-top: 2rem;
+						.news-and-articles__blog__admin {
+							margin-right: 2rem;
+							margin-bottom: 2rem;
+							i {
+								margin: 0 1rem;
+								font-size: 1.4rem;
+								color: rgb(170, 170, 170);
 							}
-							a {
-								position: absolute;
-								bottom: 0;
-								right: 0;
-								font-size: 1.6rem;
-								background-color: $purple;
-								color: $white;
-								padding: 2.5rem;
-								border: none;
-								outline: none;
+							span {
+								font-size: 1.4rem;
+								font-weight: 400;
+								letter-spacing: 0.28rem;
+								color: rgb(170, 170, 170);
 							}
 						}
 					}
 
-					.w-is-coronavirus__text-area {
-						margin-left: 9.5rem;
-						display: flex;
-						flex-direction: column;
-						h2 {
-							font-size: 3rem;
-							font-weight: 900;
-							margin-bottom: 2.4rem;
-							text-align: left;
+					.news-and-articles__blog__h3 {
+						text-align: center;
+						h3 {
+							font-size: 1.8rem;
+							font-weight: 700;
 							color: $purple;
 						}
-						p:nth-of-type(1) {
-							font-size: 1.6rem;
-							font-weight: 400;
-							text-align: left;
-							color: rgb(128, 128, 128);
-						}
-						.w-is-coronavirus__text-area__check-list {
-							.w-is-coronavirus__text-area__check-list-group {
-								display: flex;
-								align-items: center;
-
-								margin-top: 1rem;
-
-								i {
-									// font-size: 1.5rem;
-									color: $purple;
-								}
-
-								p {
-									margin-left: 1rem;
-									font-size: 1.6rem;
-									padding: 0.5rem 0;
-								}
-							}
-						}
-						.w-is-coronavirus__text-area__btn {
-							margin-top: 5rem;
-							a {
-								@include btn;
-							}
-						}
 					}
 				}
 			}
 		}
-		/*What is coronavirus section end*/
 	}
+	/*News & Article section end*/
 }
-
-/*==========MAIN END==========*/
 
 /*==========FOOTER START==========*/
 
@@ -251,6 +732,67 @@ footer {
 	.footer {
 		width: 110rem;
 		margin: 0 auto;
+
+		.footer__features {
+			display: flex;
+			justify-content: space-between;
+			.footer__features__about {
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 500;
+					margin-bottom: 2.4rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+					color: rgba(0, 0, 0, 0.7);
+					line-height: 27.2px;
+					margin-bottom: 6rem;
+				}
+				.footer__features__social-icons {
+					display: flex;
+					i {
+						color: $purple;
+						margin-right: 1.6rem;
+						font-size: 1.6rem;
+					}
+				}
+			}
+			.footer__features__style {
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 500;
+					margin-bottom: 2.4rem;
+				}
+				ul {
+					li {
+						font-size: 1.6rem;
+						font-weight: 700;
+						color: $purple;
+						line-height: 27.2px;
+						a {
+						}
+					}
+				}
+			}
+		}
+
+		.footer__copyright {
+			margin: 11rem 0;
+			text-align: center;
+			p {
+				font-size: 1.4rem;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 0.7);
+				i {
+					font-size: 1.6rem;
+					color: red;
+					margin-right: 0.3rem;
+				}
+				a {
+				}
+			}
+		}
 	}
 }
 /*==========FOOTER END==========*/
