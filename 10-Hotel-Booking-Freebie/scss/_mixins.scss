@@ -1,0 +1,27 @@
+/*Mixins*/
+
+//  grid center set heigt
+
+@mixin grid {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+// flex center set height
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// red buttons
+@mixin red-btn {
+	background-color: $dark-red;
+	border-radius: 0.4rem;
+	color: white;
+}
+
+@mixin main-width {
+	width: 144rem;
+	margin: 0 auto;
+}

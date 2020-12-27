@@ -1,0 +1,103 @@
+/*==========MAIN START==========*/
+main {
+	.main {
+		.container {
+			.url {
+				font-family: $font-mulish;
+				font-size: 1rem;
+				color: $dark-gray;
+				margin: 1.8rem 0 4.3rem 0;
+				p {
+				}
+			}
+
+			.grand-hilton-hotel {
+				.grand-hilton-hotel__text-area {
+					margin-bottom: 2rem;
+					font-family: $font-mulish;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.grand-hilton-hotel__text-area__right-side {
+						.grand-hilton-hotel__5-stars {
+							margin-bottom: 0.5rem;
+							i {
+								color: $bgc-star;
+							}
+						}
+						.grand-hilton-hotel__text-area__h2-red-btn {
+							display: flex;
+							align-items: center;
+							h2 {
+								font-size: 2.4rem;
+								font-weight: bold;
+								color: $dark-gray;
+								margin-right: 1.4rem;
+							}
+							span {
+								width: 7rem;
+								height: 2rem;
+								@include red-btn;
+								@include flex;
+							}
+						}
+
+						.grand-hilton-hotel__url {
+							p {
+								font-size: 1.2rem;
+								color: $dark-gray;
+							}
+						}
+					}
+
+					.grand-hilton-hotel__text-area__left-side {
+						width: 6.5rem;
+						height: 4.5rem;
+						background-color: $dark-red;
+						flex-direction: column;
+						border-radius: 0.4rem;
+						color: $white;
+						@include flex;
+						span:nth-of-type(1) {
+							font-size: 0.8rem;
+						}
+						span:nth-of-type(2) {
+							font-size: 1.4rem;
+						}
+					}
+				}
+
+				.grand-hilton-hotel__banners {
+					display: grid;
+					grid-template-columns: auto auto;
+					grid-template-rows: auto auto;
+
+					.grand-hilton-hotel__banner {
+						background-color: red;
+						border: 1px solid black;
+					}
+
+					.grand-hilton-hotel__image {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 1;
+						grid-row-end: 3;
+						width: 730px;
+						height: 450px;
+					}
+
+					.grand-hilton-hotel__card {
+						width: 350px;
+						height: 210px;
+					}
+
+					.grand-hilton-hotel__map {
+						width: 350px;
+						height: 210px;
+					}
+				}
+			}
+		}
+	}
+}
+/*==========MAIN END==========*/

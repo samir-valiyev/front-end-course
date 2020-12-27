@@ -1,0 +1,195 @@
+/*==========HEADER START==========*/
+header {
+	.header {
+		.container {
+			// Header top start
+			@include main-width;
+			.header__top {
+				display: flex;
+				font-family: $font-mulish;
+				justify-content: space-between;
+				color: $dark-gray;
+				margin: 2.4rem 0;
+				.header__top__questions {
+					p {
+						strong {
+						}
+						a {
+							color: $dark-gray;
+						}
+					}
+				}
+				.header__top__cards-programs {
+					@include flex;
+
+					.header__top__card-program {
+						i {
+							font-size: 1.5rem;
+
+							margin-right: 2rem;
+						}
+						span {
+							font-size: 1rem;
+						}
+						.fa-star {
+							margin-left: 10rem;
+						}
+					}
+				}
+			}
+			// Header top end
+
+			// Header bottom start
+			.header__bottom {
+				display: flex;
+				justify-content: space-between;
+				margin: 5rem 0;
+
+				// header bottom left side start
+				.header__bottom__left-side {
+					display: flex;
+					.header_bottom__logo {
+						font-family: $font-luckiest-guy;
+						margin-right: 11rem;
+						color: $dark-gray;
+						@include flex;
+						cursor: pointer;
+						h1 {
+							font-size: 2.4rem;
+
+							span {
+								color: $dark-red;
+							}
+						}
+					}
+
+					.header__bottom__search-area {
+						font-family: $font-mulish;
+						margin-right: 24rem;
+
+						@include flex;
+						input {
+							width: 28.5rem;
+							height: 4rem;
+							padding: 1.2rem 2.3rem;
+							border: none;
+							outline: none;
+							border-top-left-radius: 0.6rem;
+							border-bottom-left-radius: 0.6rem;
+							background-color: $white;
+						}
+
+						span {
+							cursor: pointer;
+							width: 6.5rem;
+							height: 4rem;
+							background-color: $dark-red;
+							color: $white;
+							border-top-right-radius: 0.6rem;
+							border-bottom-right-radius: 0.6rem;
+							@include flex;
+
+							i {
+								font-size: 1.3rem;
+							}
+						}
+					}
+				}
+				// header bottom left side end
+
+				// header bottom right side start
+				.header__bottom__right-side {
+					display: flex;
+					.header__bottom__checkout {
+						margin-right: 6rem;
+						position: relative;
+						@include flex;
+						cursor: pointer;
+
+						i {
+							font-size: 2rem;
+						}
+						span {
+							position: absolute;
+							top: 0rem;
+							right: -1rem;
+							width: 2rem;
+							height: 2rem;
+							@include flex;
+							background-color: $dark-red;
+							color: $white;
+							border-radius: 50%;
+						}
+					}
+					.header__bottom__profile {
+						@include flex;
+						figure {
+							margin-right: 1.8rem;
+							img {
+							}
+						}
+						span {
+							margin-right: 2.4rem;
+							font-size: 1.4rem;
+						}
+						i {
+							font-size: 1.6rem;
+							cursor: pointer;
+						}
+					}
+				}
+				// header bottom right side end
+			}
+			// Header bottom end
+		}
+		.container-fluid {
+			width: 100%;
+			height: 8rem;
+			background-color: $bgc-dark-blue;
+			font-family: $font-mulish;
+
+			.header__navigation-features {
+				height: 8rem;
+				display: grid;
+				align-content: center;
+
+				.fa-bars {
+					color: $white;
+					display: none;
+				}
+				.header__nav {
+					margin: $body-margin-r-l-165px;
+
+					ul {
+						display: flex;
+						justify-content: space-between;
+
+						li {
+							a {
+								text-transform: uppercase;
+								font-size: 1.4rem;
+								font-weight: bold;
+								color: $white;
+								transition: all 0.2s;
+
+								&:hover {
+									color: $dark-red;
+								}
+							}
+						}
+					}
+
+					.fa-times {
+						color: $dark-red;
+						display: none;
+					}
+				}
+			}
+		}
+		/*Header navigation start*/
+		.navigation-features {
+		}
+		/*Header navigation end*/
+	}
+}
+/*==========HEADER END==========*/
