@@ -33,27 +33,8 @@ header .header {
   /*Header navigation end*/
 }
 
-header .header .container {
-  width: 144rem;
-  margin: 0 auto;
-}
-
-header .header .container .header__top {
-  display: flex;
-  font-family: "Mulish", sans-serif;
-  justify-content: space-between;
-  color: #333;
-  margin: 2.4rem 0;
-}
-
 header .header .container .header__top .header__top__questions p a {
   color: #333;
-}
-
-header .header .container .header__top .header__top__cards-programs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header .header .container .header__top .header__top__cards-programs .header__top__card-program i {
@@ -303,32 +284,166 @@ main .main .container .grand-hilton-hotel .grand-hilton-hotel__text-area .grand-
 
 main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-template-rows: 26rem auto;
+  grid-gap: 2rem;
 }
 
 main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__banner {
-  background-color: red;
-  border: 1px solid black;
+  border-radius: 0.8rem;
 }
 
 main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__image {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 730px;
-  height: 450px;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__image img {
+  width: 100%;
 }
 
 main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card {
-  width: 350px;
-  height: 210px;
+  background-color: #0a223d;
+  color: #fff;
+  padding: 2.6rem;
+  padding-top: 5rem;
+  font-family: "Nunito", sans-serif;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__left-side span:nth-of-type(1) {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__left-side span:nth-of-type(2) {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__left-side span:nth-of-type(3) {
+  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__left-side span:nth-of-type(4) {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(1) i {
+  font-size: 1.5rem;
+  margin-right: 1.3rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(1) span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(2) {
+  margin-bottom: 1rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(2) i {
+  font-size: 1.5rem;
+  margin-right: 1.3rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(2) span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(3) {
+  margin-bottom: 2.4rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(3) i {
+  font-size: 1.5rem;
+  margin-right: 1.3rem;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__text-area .card__text-area__right-side div:nth-of-type(3) span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__btn {
+  background-color: #ec1f46;
+  border-radius: 0.4rem;
+  color: white;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__card .card__btn a {
+  background-color: #ec1f46;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 main .main .container .grand-hilton-hotel .grand-hilton-hotel__banners .grand-hilton-hotel__map {
-  width: 350px;
-  height: 210px;
+  width: 100%;
+  height: 100%;
+}
+
+main .main .container .middle-nav {
+  font-family: "Mulish", sans-serif;
+  margin: 6.5rem 0;
+}
+
+main .main .container .middle-nav ul {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: space-between;
+}
+
+main .main .container .middle-nav ul li a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+main .main .container .middle-nav ul li a:hover {
+  color: #ec1f46;
+  position: relative;
+}
+
+main .main .container .middle-nav ul li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  bottom: -1.5rem;
+  left: 0;
+  background: #ec1f46;
+  transition: 0.5s;
 }
 
 /*==========MAIN END==========*/

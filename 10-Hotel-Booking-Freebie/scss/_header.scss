@@ -3,25 +3,16 @@ header {
 	.header {
 		.container {
 			// Header top start
-			@include main-width;
+
 			.header__top {
-				display: flex;
-				font-family: $font-mulish;
-				justify-content: space-between;
-				color: $dark-gray;
-				margin: 2.4rem 0;
 				.header__top__questions {
 					p {
-						strong {
-						}
 						a {
 							color: $dark-gray;
 						}
 					}
 				}
 				.header__top__cards-programs {
-					@include flex;
-
 					.header__top__card-program {
 						i {
 							font-size: 1.5rem;
