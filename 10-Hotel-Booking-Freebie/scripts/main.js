@@ -1,13 +1,14 @@
-/*Header navigation menu start*/
-
-const open = document.getElementById("open");
-const close = document.getElementById("close");
-const nav = document.querySelector(".nav");
+// Navigation menu start
+const open = document.querySelector(".fa-bars");
+const close = document.querySelector(".fa-times");
+const navMenu = document.querySelector(".nav");
 
 open.addEventListener("click", function () {
-	nav.style.display = "block";
+	navMenu.style.display = "block";
 });
+
 close.addEventListener("click", function () {
-	nav.style.display = "none";
+	navMenu.style.display = "none";
 });
-/*Header navigation menu end*/
+
+// Navigation menu end

@@ -1,0 +1,154 @@
+/*Media Query 768px start*/
+@media (max-width: 768px) {
+	header {
+		/*==========HEADER TOP START==========*/
+		.header-top__container {
+			.header-top {
+				flex-direction: column;
+				@include flex;
+
+				p {
+					margin: 1rem 0 0 0;
+					strong {
+					}
+					a {
+						color: $dark-gray;
+					}
+				}
+				.header-top__right-side {
+					margin: 1rem 0;
+					.right-side {
+						.right-side__gift-i {
+							margin-right: 1rem;
+						}
+						span {
+						}
+						.fa-star {
+							margin-left: 3rem;
+						}
+					}
+				}
+			}
+		}
+		/*==========HEADER TOP END==========*/
+
+		/*==========HEADER BOTTOM STARTS==========*/
+		.header-bottom__container {
+			width: 100%;
+
+			.header__bottom {
+				// header bottom left side start
+				flex-direction: column;
+				align-items: center;
+				margin: 1rem 0;
+				.header__bottom__left-side {
+					flex-direction: column;
+					margin-right: 0rem;
+					.header_bottom__logo {
+						margin-right: 0rem;
+						h1 {
+							font-size: 3rem;
+							margin-bottom: 1rem;
+						}
+					}
+
+					.header__bottom__search-area {
+						margin-right: 0rem;
+						margin-bottom: 1.5rem;
+						input {
+							width: 20rem;
+							height: 4rem;
+							padding: 1.2rem 2rem;
+						}
+
+						span {
+							cursor: pointer;
+							width: 6rem;
+							height: 4rem;
+							i {
+								font-size: 1.4rem;
+							}
+						}
+					}
+				}
+				// header bottom left side end
+
+				// header bottom right side start
+				.header__bottom__right-side {
+					.header__bottom__checkout {
+						margin-right: 2rem;
+
+						i {
+							font-size: 2rem;
+						}
+						span {
+							position: absolute;
+							top: -0.2rem;
+							right: -1rem;
+						}
+					}
+					.header__bottom__profile {
+						span {
+							margin-right: 2rem;
+							font-size: 1.6rem;
+						}
+						i {
+							font-size: 1.6rem;
+							cursor: pointer;
+						}
+					}
+				}
+				// header bottom right side end
+			}
+		}
+
+		/*==========HEADER BOTTOM ENDS==========*/
+
+		/*==========NAVIGATION MENU START==========*/
+		.nav-container {
+			.fa-bars {
+				position: absolute;
+				top: 2.5rem;
+				right: 2.5rem;
+				font-size: 3rem;
+				display: block;
+				color: $white;
+			}
+			.nav {
+				display: none;
+
+				.nav__list {
+					display: flex;
+					flex-direction: column;
+
+					background-color: #0a223d;
+					width: 100%;
+					height: 100vh;
+					.nav__item {
+						margin: 1.5rem 0;
+						.nav__link {
+							font-size: 1.6rem;
+							padding: 0 1.5rem;
+						}
+					}
+				}
+
+				.fa-times {
+					font-size: 3rem;
+					transition: 0.2s;
+					display: block;
+					position: absolute;
+					top: 2.5rem;
+					right: 2.5rem;
+					color: $white;
+
+					&:hover {
+						color: $dark-red;
+					}
+				}
+			}
+		}
+		/*==========NAVIGATION MENU END==========*/
+	}
+}
+/*Media Query 768px end*/
