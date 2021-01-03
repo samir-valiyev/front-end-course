@@ -9,3 +9,10 @@
 	width: $width-1110px;
 	margin: 0 auto;
 }
+
+// red buttons
+@mixin red-btn {
+	background-color: $dark-red;
+	border-radius: 0.4rem;
+	color: white;
+}

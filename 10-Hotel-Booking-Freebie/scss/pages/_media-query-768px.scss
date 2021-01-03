@@ -1,109 +1,6 @@
 /*Media Query 768px start*/
 @media (max-width: 768px) {
 	header {
-		/*==========HEADER TOP START==========*/
-		.header-top__container {
-			.header-top {
-				flex-direction: column;
-				@include flex;
-
-				p {
-					margin: 1rem 0 0 0;
-					strong {
-					}
-					a {
-						color: $dark-gray;
-					}
-				}
-				.header-top__right-side {
-					margin: 1rem 0;
-					.right-side {
-						.right-side__gift-i {
-							margin-right: 1rem;
-						}
-						span {
-						}
-						.fa-star {
-							margin-left: 3rem;
-						}
-					}
-				}
-			}
-		}
-		/*==========HEADER TOP END==========*/
-
-		/*==========HEADER BOTTOM STARTS==========*/
-		.header-bottom__container {
-			width: 100%;
-
-			.header__bottom {
-				// header bottom left side start
-				flex-direction: column;
-				align-items: center;
-				margin: 1rem 0;
-				.header__bottom__left-side {
-					flex-direction: column;
-					margin-right: 0rem;
-					.header_bottom__logo {
-						margin-right: 0rem;
-						h1 {
-							font-size: 3rem;
-							margin-bottom: 1rem;
-						}
-					}
-
-					.header__bottom__search-area {
-						margin-right: 0rem;
-						margin-bottom: 1.5rem;
-						input {
-							width: 20rem;
-							height: 4rem;
-							padding: 1.2rem 2rem;
-						}
-
-						span {
-							cursor: pointer;
-							width: 6rem;
-							height: 4rem;
-							i {
-								font-size: 1.4rem;
-							}
-						}
-					}
-				}
-				// header bottom left side end
-
-				// header bottom right side start
-				.header__bottom__right-side {
-					.header__bottom__checkout {
-						margin-right: 2rem;
-
-						i {
-							font-size: 2rem;
-						}
-						span {
-							position: absolute;
-							top: -0.2rem;
-							right: -1rem;
-						}
-					}
-					.header__bottom__profile {
-						span {
-							margin-right: 2rem;
-							font-size: 1.6rem;
-						}
-						i {
-							font-size: 1.6rem;
-							cursor: pointer;
-						}
-					}
-				}
-				// header bottom right side end
-			}
-		}
-
-		/*==========HEADER BOTTOM ENDS==========*/
-
 		/*==========NAVIGATION MENU START==========*/
 		.nav-container {
 			.fa-bars {
@@ -150,5 +47,141 @@
 		}
 		/*==========NAVIGATION MENU END==========*/
 	}
+
+	/*	Main Container starts */
+	main {
+		.main {
+			.main__container {
+				width: 100%;
+				margin: 0 3rem;
+				.url {
+					text-align: center;
+					margin: 1.2rem 0 1.6rem 0;
+				}
+
+				.grand-hilton-hotel {
+					.grand-hilton-hotel__text-area {
+						justify-content: center;
+						flex-direction: column;
+
+						.grand-hilton-hotel__text-area__right-side {
+							margin-right: 0rem;
+							.grand-hilton-hotel__5-stars {
+								i {
+								}
+							}
+							.grand-hilton-hotel__text-area__h2-red-btn {
+								h2 {
+									font-size: 2rem;
+								}
+								span {
+									margin: 1rem 0;
+								}
+							}
+
+							.grand-hilton-hotel__url {
+								p {
+									font-size: 1rem;
+									margin: 0 0 1rem 0;
+								}
+							}
+						}
+
+						.grand-hilton-hotel__text-area__left-side {
+							margin-right: 5rem;
+							width: 6rem;
+							height: 4rem;
+						}
+					}
+
+					.grand-hilton-hotel__banners {
+						display: grid;
+						grid-template-areas:
+							"box-1"
+							"box-2"
+							"box-3";
+						justify-content: center;
+
+						.box-1 {
+							width: 100%;
+							height: 21rem;
+						}
+						.grand-hilton-hotel__banner {
+							border-radius: 0.8rem;
+						}
+
+						.grand-hilton-hotel__image {
+							margin-right: 0rem;
+
+							img {
+								width: 35rem;
+							}
+						}
+
+						.grand-hilton-hotel__card {
+							padding: 1.6rem;
+
+							.card__text-area {
+								margin-bottom: 0rem;
+
+								.card__text-area__right-side {
+									display: flex;
+									flex-direction: column;
+
+									div:nth-of-type(1) {
+										margin-bottom: 1rem;
+										i {
+											font-size: 1.2rem;
+											margin-right: 1.3rem;
+										}
+									}
+
+									div:nth-of-type(2) {
+										margin-bottom: 1rem;
+										i {
+											font-size: 1.2rem;
+											margin-right: 1.3rem;
+										}
+
+										span {
+											font-size: 1.2rem;
+											font-weight: 600;
+										}
+									}
+									div:nth-of-type(3) {
+										margin-bottom: 2.4rem;
+										i {
+											font-size: 1.2rem;
+											margin-right: 1.3rem;
+										}
+
+										span {
+											font-size: 1.8rem;
+											font-weight: 600;
+										}
+									}
+								}
+							}
+
+							.card__btn {
+								height: 3rem;
+
+								a {
+									font-size: 1.2rem;
+								}
+							}
+						}
+
+						.grand-hilton-hotel__map {
+						}
+					}
+				}
+				.middle-nav {
+					display: none;
+				}
+			}
+		}
+	}
+	/*	Main Container ends */
 }
 /*Media Query 768px end*/

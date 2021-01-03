@@ -1,4 +1,51 @@
 /*Media Query 576px start*/
 @media (max-width: 576px) {
+	/*==========MAIN START==========*/
+	main {
+		.main {
+			/*	Main Container starts */
+			.main__container {
+				.url {
+				}
+
+				.grand-hilton-hotel {
+					.grand-hilton-hotel__text-area {
+						.grand-hilton-hotel__text-area__right-side {
+						}
+					}
+
+					.grand-hilton-hotel__banners {
+						.box-1 {
+							grid-area: box-1;
+							width: 100%;
+							height: 20rem;
+						}
+						.box-2 {
+							grid-area: box-2;
+							width: 100%;
+							height: 20rem;
+						}
+						.box-3 {
+							grid-area: box-3;
+							border: 1px solid red;
+							width: 100%;
+							height: 20rem;
+						}
+						.grand-hilton-hotel__banner {
+						}
+
+						.grand-hilton-hotel__image {
+						}
+
+						.grand-hilton-hotel__map {
+						}
+					}
+				}
+			}
+
+			/*	Main Container ends */
+		}
+	}
+	/*==========MAIN END==========*/
 }
 /*Media Query 576px end*/
