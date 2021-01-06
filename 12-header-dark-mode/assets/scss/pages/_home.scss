@@ -1,7 +1,7 @@
 /*==========MAIN START==========*/
 main {
 	.main {
-		width: 70%;
+		width: 80%;
 		margin: 0 auto;
 
 		/*Main text area starts */
@@ -30,10 +30,12 @@ main {
 		/*Main cards starts*/
 		.main__cards {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			flex-wrap: wrap;
 			margin-bottom: 2rem;
-
+			.main__card {
+				margin: 1rem;
+			}
 			// main card 1 starts
 			.main__card--1 {
 				@include card;
@@ -42,7 +44,7 @@ main {
 				}
 
 				a {
-					font-size: 2rem;
+					font-size: 1.6rem;
 					color: var(--dark-purple);
 					text-transform: uppercase;
 

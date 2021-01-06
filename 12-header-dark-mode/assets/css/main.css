@@ -648,13 +648,38 @@ body {
 }
 
 /*==========BUTTONS START==========*/
+@keyframes left {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
 /*==========BUTTONS END==========*/
+.samir {
+  color: red;
+}
+
 /*==========NAVIGATION START==========*/
 /*==========NAVIGATION END==========*/
 /*==========HEADER START==========*/
+.d-none {
+  display: block;
+}
+
 header .header {
-  max-width: 1200px;
-  min-width: 700px;
+  max-width: 90%;
   height: 6.4rem;
   margin: 2rem auto 3rem auto;
   display: flex;
@@ -672,6 +697,10 @@ header .header .header__logo {
   cursor: pointer;
 }
 
+header .header .nav {
+  display: block;
+}
+
 header .header .nav .nav__list {
   display: flex;
   justify-content: center;
@@ -681,7 +710,7 @@ header .header .nav .nav__list {
 
 header .header .nav .nav__list .nav__item .nav__link {
   font-size: 1.8rem;
-  padding: 1.4rem;
+  padding: 0 1.4rem;
   color: var(--dark-purple);
 }
 
@@ -690,7 +719,7 @@ header .header .nav .nav__list .nav__item .nav__btn {
   padding: 1.5rem 3.8rem;
   color: var(--white);
   border-radius: 0.5rem;
-  box-shadow: 0px 9px 28px -10px rgba(1, 9, 104, 0.37582);
+  box-shadow: 0rem 0.9rem 2.8rem -1rem rgba(1, 9, 104, 0.37582);
 }
 
 header .header .nav .nav__list .header__dark-mode {
@@ -735,6 +764,98 @@ header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
   background-color: #787e7a;
 }
 
+@media (max-width: 1200px) {
+  header .header .nav .nav__list .header__dark-mode {
+    /*header toggle starts*/
+    /*header toggle ends*/
+  }
+  header .header .nav .nav__list .header__dark-mode .label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+  }
+  header .header .nav .nav__list .header__dark-mode .label .toggle {
+    isolation: isolate;
+    position: relative;
+    height: 20px;
+    width: 35px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+    border: 3px solid #daf5e8;
+    margin-left: 1rem;
+  }
+  header .header .nav .nav__list .header__dark-mode .label .toggle .toggle-state {
+    display: none;
+  }
+  header .header .nav .nav__list .header__dark-mode .label .toggle .toggle-state:checked ~ .indicator {
+    transform: translate3d(25%, 0, 0);
+  }
+  header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
+    height: 100%;
+    width: 200%;
+    background: #ecf0f3;
+    border-radius: 15px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+    background-color: #787e7a;
+  }
+}
+
+header .header .menu-animation-bars {
+  display: none;
+  cursor: pointer;
+}
+
+header .header .menu-animation-bars .menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+header .header .menu-animation-bars .menu .line {
+  fill: none;
+  stroke: var(--black);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header .header .menu-animation-bars .menu .line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+header .header .menu-animation-bars .menu .line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+header .header .menu-animation-bars .menu .line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+header .header .menu-animation-bars .opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+header .header .menu-animation-bars .opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+header .header .menu-animation-bars .opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
 /*==========HEADER END==========*/
 /*==========FORM START==========*/
 /*==========FORM END==========*/
@@ -744,7 +865,7 @@ header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
 /*==========FOOTER END==========*/
 /*==========MAIN START==========*/
 main .main {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   /*Main text area starts */
   /*Main text area ends*/
@@ -775,9 +896,13 @@ main .main .main__text-area p {
 
 main .main .main__cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+}
+
+main .main .main__cards .main__card {
+  margin: 1rem;
 }
 
 main .main .main__cards .main__card--1 {
@@ -794,12 +919,28 @@ main .main .main__cards .main__card--1 h3 {
   color: var(--dark-purple);
 }
 
+@media (max-width: 768px) {
+  main .main .main__cards .main__card--1 {
+    width: 100%;
+    height: 15rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+    border-radius: 0.5rem;
+  }
+  main .main .main__cards .main__card--1 h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    text-align: center;
+  }
+}
+
 main .main .main__cards .main__card--1 h3 {
   margin-bottom: 4rem;
 }
 
 main .main .main__cards .main__card--1 a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--dark-purple);
   text-transform: uppercase;
 }
@@ -820,6 +961,22 @@ main .main .main__cards .main__card--2 h3 {
   font-size: 2.6rem;
   font-weight: bold;
   color: var(--dark-purple);
+}
+
+@media (max-width: 768px) {
+  main .main .main__cards .main__card--2 {
+    width: 100%;
+    height: 15rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+    border-radius: 0.5rem;
+  }
+  main .main .main__cards .main__card--2 h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    text-align: center;
+  }
 }
 
 main .main .main__cards .main__card--2 h3 {
@@ -846,6 +1003,22 @@ main .main .main__cards .main__card--3 h3 {
   color: var(--dark-purple);
 }
 
+@media (max-width: 768px) {
+  main .main .main__cards .main__card--3 {
+    width: 100%;
+    height: 15rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+    border-radius: 0.5rem;
+  }
+  main .main .main__cards .main__card--3 h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    text-align: center;
+  }
+}
+
 main .main .main__cards .main__card--3 h3 {
   margin-bottom: 2.5rem;
 }
@@ -862,10 +1035,180 @@ main .main .main__cards .main__card--3 .main__card-btn {
 
 /*==========MAIN END==========*/
 /*Media Query 1200px start*/
+@media (max-width: 1200px) {
+  /*==========HEADER START==========*/
+  header .header {
+    max-width: 90%;
+    height: 6.4rem;
+    margin: 2rem auto 3rem auto;
+    /*Navgigation menu starts*/
+    /*Navgigation menu ends*/
+  }
+  header .header .nav .nav__list .nav__item .nav__link {
+    padding: 0 1rem;
+  }
+  header .header .nav .nav__list .nav__item .nav__btn {
+    padding: 1rem 2.6rem;
+  }
+  /*==========HEADER END==========*/
+  /*==========MAIN START==========*/
+  main .main {
+    /*Main text area starts */
+    /*Main text area ends*/
+  }
+  main .main .main__text-area {
+    margin-bottom: 8rem;
+  }
+  main .main .main__text-area h1 {
+    width: 60%;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  main .main .main__text-area p {
+    width: 60%;
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  /*==========MAIN END==========*/
+}
+
 /*Media Query 1200px end*/
 /*Media Query 992px start*/
 /*Media Query 992px end*/
 /*Media Query 768px start*/
+@media (max-width: 768px) {
+  /*==========HEADER START==========*/
+  header .header {
+    margin: 0;
+    position: relative;
+    /*header logo starts*/
+    /*header logo ends*/
+    /*Navgigation menu starts*/
+    /*Navgigation menu ends*/
+  }
+  header .header .header__logo {
+    margin-left: 1rem;
+  }
+  header .header .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100vh;
+    width: 80vw;
+    background-color: var(--white);
+    box-shadow: inset 0 0 5px var(--black);
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    animation-name: left;
+    animation-duration: 600ms;
+  }
+  header .header .nav .nav__list {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  header .header .nav .nav__list .nav__item {
+    margin: 1.6rem 0;
+  }
+  header .header .nav .nav__list .nav__item .nav__link {
+    font-size: 2.6rem;
+    padding: 0 1rem;
+  }
+  header .header .nav .nav__list .nav__item .nav__btn {
+    padding: 1rem 2.6rem;
+  }
+  header .header .nav .nav__list .header__dark-mode {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  header .header .menu-animation-bars {
+    position: absolute;
+    top: 2rem;
+    right: -3rem;
+    display: block;
+  }
+  /*==========HEADER END==========*/
+  /*==========MAIN START==========*/
+  main .main {
+    /*Main text area starts */
+    /*Main text area ends*/
+    /*Main cards starts*/
+    /*Main cards ends*/
+  }
+  main .main .main__text-area {
+    margin-bottom: 6rem;
+  }
+  main .main .main__text-area h1 {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+  main .main .main__text-area p {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  main .main .main__cards .main__card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .main .main__cards .main__card--1 h3 {
+    margin-bottom: 5rem;
+  }
+  main .main .main__cards .main__card--1 a {
+    font-size: 2rem;
+  }
+  main .main .main__cards .main__card--1 a i {
+    margin-left: 0.7rem;
+  }
+  main .main .main__cards .main__card--2 h3 {
+    margin-bottom: 3rem;
+  }
+  main .main .main__cards .main__card--3 {
+    width: 33.5rem;
+    height: 21.7rem;
+    padding: 4rem;
+    box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+    border-radius: 0.5rem;
+  }
+  main .main .main__cards .main__card--3 h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+  }
+}
+
+@media (max-width: 768px) and (max-width: 768px) {
+  main .main .main__cards .main__card--3 {
+    width: 100%;
+    height: 15rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+    border-radius: 0.5rem;
+  }
+  main .main .main__cards .main__card--3 h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  main .main .main__cards .main__card--3 h3 {
+    margin-bottom: 2.5rem;
+  }
+  main .main .main__cards .main__card--3 .main__card-btn {
+    border: 2px solid #d4d7ff;
+  }
+  /*==========MAIN END==========*/
+}
+
 /*Media Query 768px end*/
 /*Media Query 576px start*/
 /*Media Query 576px end*/
