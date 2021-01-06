@@ -731,7 +731,7 @@ header .header .nav .nav__list .header__dark-mode .label {
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: #394a56;
+  color: #f30202;
 }
 
 header .header .nav .nav__list .header__dark-mode .label .toggle {
@@ -742,7 +742,7 @@ header .header .nav .nav__list .header__dark-mode .label .toggle {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
-  border: 3px solid #daf5e8;
+  border: 3px solid var(--black);
   margin-left: 1rem;
 }
 
@@ -757,11 +757,11 @@ header .header .nav .nav__list .header__dark-mode .label .toggle .toggle-state:c
 header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
   height: 100%;
   width: 200%;
-  background: #ecf0f3;
+  background: var(--black);
   border-radius: 15px;
   transform: translate3d(-75%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  background-color: #787e7a;
+  background-color: var(--dark-purple);
 }
 
 @media (max-width: 1200px) {
@@ -773,7 +773,6 @@ header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #394a56;
   }
   header .header .nav .nav__list .header__dark-mode .label .toggle {
     isolation: isolate;
@@ -783,7 +782,6 @@ header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
-    border: 3px solid #daf5e8;
     margin-left: 1rem;
   }
   header .header .nav .nav__list .header__dark-mode .label .toggle .toggle-state {
@@ -795,11 +793,9 @@ header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
   header .header .nav .nav__list .header__dark-mode .label .toggle .indicator {
     height: 100%;
     width: 200%;
-    background: #ecf0f3;
     border-radius: 15px;
     transform: translate3d(-75%, 0, 0);
     transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-    background-color: #787e7a;
   }
 }
 
@@ -1043,6 +1039,9 @@ main .main .main__cards .main__card--3 .main__card-btn {
     margin: 2rem auto 3rem auto;
     /*Navgigation menu starts*/
     /*Navgigation menu ends*/
+  }
+  header .header .nav {
+    display: block;
   }
   header .header .nav .nav__list .nav__item .nav__link {
     padding: 0 1rem;

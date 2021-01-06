@@ -9,6 +9,7 @@ toggleMenu.addEventListener("click", function () {
 // header navigation menu stats
 const bars = document.querySelector(".menu-animation-bars");
 const navMenu = document.querySelector(".nav");
+const body = document.querySelector("body");
 
 bars.addEventListener("click", function () {
 	if (navMenu.style.display === "block") {
