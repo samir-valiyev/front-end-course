@@ -1,0 +1,21 @@
+/*Variables*/
+// colors starts
+:root {
+	--black: rgb(0, 0, 0);
+	--white: #f1e5e5;
+	--dark-purple: #2b2862;
+	--light-purple: #606dfe;
+	--light-white: #d4d7ff;
+}
+
+.dark-mode {
+	--black: rgb(255, 255, 255);
+	--white: #000000;
+	--dark-purple: #a3a3aa;
+	--light-purple: #c0c0c0;
+	--light-white: #f3f3f5;
+}
+// colors ends
+
+// fonts
+$font-redressed: "Redressed", cursive;

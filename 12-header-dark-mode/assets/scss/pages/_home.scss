@@ -1,0 +1,93 @@
+/*==========MAIN START==========*/
+main {
+	.main {
+		width: 70%;
+		margin: 0 auto;
+
+		/*Main text area starts */
+		.main__text-area {
+			margin-bottom: 10rem;
+			h1 {
+				width: 50%;
+				font-size: 6rem;
+				font-weight: bold;
+				line-height: 6rem;
+				color: var(--dark-purple);
+				margin-bottom: 2rem;
+			}
+
+			p {
+				width: 45%;
+				font-size: 2.2rem;
+				line-height: 3.2rem;
+				font-weight: normal;
+				color: var(--dark-purple);
+			}
+		}
+
+		/*Main text area ends*/
+
+		/*Main cards starts*/
+		.main__cards {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-bottom: 2rem;
+
+			// main card 1 starts
+			.main__card--1 {
+				@include card;
+				h3 {
+					margin-bottom: 4rem;
+				}
+
+				a {
+					font-size: 2rem;
+					color: var(--dark-purple);
+					text-transform: uppercase;
+
+					i {
+						margin-left: 0.7rem;
+					}
+				}
+			}
+			// main card 1 ends
+
+			// main card 2 starts
+			.main__card--2 {
+				@include card;
+				h3 {
+					margin-bottom: 2rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					color: var(--dark-purple);
+				}
+			}
+			// main card 2 ends
+
+			// main card 3 starts
+			.main__card--3 {
+				@include card;
+				h3 {
+					margin-bottom: 2.5rem;
+				}
+
+				.main__card-btn {
+					background: var(--white);
+					border: 1px solid #d4d7ff;
+					border-radius: 21px;
+					padding: 0.8rem 3rem;
+					font-size: 1.6rem;
+					font-weight: bold;
+					color: var(--light-purple);
+				}
+			}
+			// main card 3 ends
+		}
+		/*Main cards ends*/
+	}
+}
+/*==========MAIN END==========*/

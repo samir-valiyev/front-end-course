@@ -693,6 +693,8 @@ header .nav-container .nav .fa-times:hover {
 /*==========MAIN START==========*/
 main .main {
   /*	Main Container starts */
+  /*Package Summery Section Starts*/
+  /*Package Summery Section Ends*/
   /*	Main Container ends */
 }
 
@@ -937,6 +939,133 @@ main .main .main__container .middle-nav ul li a:hover::after {
   left: 0;
   background: #ec1f46;
   transition: 0.5s;
+}
+
+main .main .package-summary {
+  font-family: "Mulish", sans-serif;
+  width: 111rem;
+  margin: 0 auto;
+  color: #333;
+}
+
+main .main .package-summary h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+main .main .package-summary .package-summary__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-column-gap: 3.2rem;
+  margin-bottom: 3.3rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__header {
+  width: 100%;
+  height: 5rem;
+  background-color: #0a223d;
+  border-radius: 0.4rem 0.4rem 0 0;
+  display: flex;
+  align-items: center;
+  padding-left: 2.4rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__header h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features {
+  background-color: #f5fafe;
+  border: 1px solid #333;
+  border-radius: 0 0 0.4rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.8rem 2.5rem 0.4rem 2.5rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features .package-highlights__left div div {
+  margin-bottom: 2.4rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features .package-highlights__left div div i {
+  font-size: 1.4rem;
+  margin-right: 2.2rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features .package-highlights__left div div span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features .package-highlights__right div div {
+  margin-bottom: 2.4rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features .package-highlights__right div div i {
+  font-size: 1.4rem;
+  margin-right: 2.2rem;
+}
+
+main .main .package-summary .package-summary__features .package-highlights .package-highlights__features .package-highlights__right div div span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__header {
+  width: 100%;
+  height: 5rem;
+  background-color: #0a223d;
+  border-radius: 0.4rem 0.4rem 0 0;
+  display: flex;
+  align-items: center;
+  padding-left: 2.4rem;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__header h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features {
+  background-color: #f5fafe;
+  border: 1px solid #333;
+  border-radius: 0 0 0.4rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.8rem 2.5rem 2.8rem 2.5rem;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features .offer-details__left {
+  width: 50%;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features .offer-details__left div div i {
+  font-size: 1.4rem;
+  margin-right: 2.2rem;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features .offer-details__left div div span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features .offer-details__left div div span:nth-of-type(2) {
+  margin-top: 3.2rem;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features .offer-details__right div div i {
+  font-size: 1.4rem;
+  margin-right: 2.2rem;
+}
+
+main .main .package-summary .package-summary__features .offer-details .offer-details__features .offer-details__right div div span {
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 /*==========MAIN END==========*/

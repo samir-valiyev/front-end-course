@@ -237,7 +237,121 @@ main {
 				}
 			}
 		}
+		/*Package Summery Section Starts*/
+		.package-summary {
+			font-family: $font-mulish;
+			@include width-1110px;
+			color: $dark-gray;
+			h2 {
+				font-size: 2.4rem;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-bottom: 3rem;
+			}
+			.package-summary__features {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+				grid-column-gap: 3.2rem;
+				margin-bottom: 3.3rem;
+				.package-highlights {
+					.package-highlights__header {
+						@include package-summery-header;
+					}
 
+					.package-highlights__features {
+						background-color: $section-bgc;
+						border: 1px solid $dark-gray;
+						border-radius: 0 0 0.4rem 0.4rem;
+						display: flex;
+						justify-content: space-between;
+						padding: 2.8rem 2.5rem 0.4rem 2.5rem;
+						.package-highlights__left {
+							div {
+								div {
+									margin-bottom: 2.4rem;
+									i {
+										font-size: 1.4rem;
+										margin-right: 2.2rem;
+									}
+									span {
+										font-size: 1.2rem;
+										font-weight: normal;
+									}
+								}
+							}
+						}
+
+						.package-highlights__right {
+							div {
+								div {
+									margin-bottom: 2.4rem;
+									i {
+										font-size: 1.4rem;
+										margin-right: 2.2rem;
+									}
+
+									span {
+										font-size: 1.2rem;
+										font-weight: normal;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.offer-details {
+					.offer-details__header {
+						@include package-summery-header;
+					}
+
+					.offer-details__features {
+						background-color: $section-bgc;
+						border: 1px solid $dark-gray;
+						border-radius: 0 0 0.4rem 0.4rem;
+						display: flex;
+						justify-content: space-between;
+						padding: 2.8rem 2.5rem 2.8rem 2.5rem;
+
+						.offer-details__left {
+							width: 50%;
+							div {
+								div {
+									i {
+										font-size: 1.4rem;
+										margin-right: 2.2rem;
+									}
+
+									span {
+										font-size: 1.2rem;
+										font-weight: normal;
+									}
+									span:nth-of-type(2) {
+										margin-top: 3.2rem;
+									}
+								}
+							}
+						}
+
+						.offer-details__right {
+							div {
+								div {
+									i {
+										font-size: 1.4rem;
+										margin-right: 2.2rem;
+									}
+									span {
+										font-size: 1.2rem;
+										font-weight: normal;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		/*Package Summery Section Ends*/
 		/*	Main Container ends */
 	}
 }
