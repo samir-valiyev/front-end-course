@@ -20,3 +20,4 @@ bars.addEventListener("click", function () {
 	}
 });
 // header navigation menu ends
+console.log();
