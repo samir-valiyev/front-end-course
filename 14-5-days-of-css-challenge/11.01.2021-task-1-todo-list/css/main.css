@@ -83,5 +83,10 @@ main .container .fa-sync {
   font-size: 1.6rem;
   cursor: pointer;
   color: #497081;
+  transition: 0.2s;
+}
+
+main .container .fa-sync:hover {
+  transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */

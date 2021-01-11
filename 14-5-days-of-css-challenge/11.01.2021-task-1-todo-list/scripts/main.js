@@ -24,13 +24,11 @@ fullDate.innerHTML = `${month} ${date}, ${year}`;
 /*========== Date ends =========== */
 
 /*========== Todo list starts =========== */
-const icon = document.querySelector(".fa-circle");
+
 const ul = document.querySelector(".todo-list__items");
 const li = document.querySelector(".todo-list__item");
-
+const i = document.querySelector("#i");
 ul.addEventListener("click", (event) => {
-	console.log(event.target);
 	event.target.classList.toggle("checked");
-	event.target.classList.remove("fa-circle");
 });
 /*========== Todo list ends =========== */
