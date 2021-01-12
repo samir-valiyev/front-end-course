@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #0c5c41;
+}
+
+.container {
+  position: relative;
+  width: 32rem;
+  margin: 15rem auto;
+  perspective: 100rem;
+}
+
+.container .img-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(-360deg) translateZ(-30rem);
+  animation: carousel 40s steps(10000, end) infinite;
+}
+
+.container .img-box .img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 30rem;
+  height: 20rem;
+}
+
+.container .img-box .img img {
+  width: 30rem;
+  height: 20rem;
+  border: 0.5rem solid #fff;
+}
+
+.container .img-box .img.img-one {
+  transform: rotateY(0deg) translateZ(30rem);
+}
+
+.container .img-box .img.img-two {
+  transform: rotateY(120deg) translateZ(30rem);
+}
+
+.container .img-box .img.img-three {
+  transform: rotateY(240deg) translateZ(30rem);
+}
+
+@keyframes carousel {
+  from {
+    transform: rotateY(-360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

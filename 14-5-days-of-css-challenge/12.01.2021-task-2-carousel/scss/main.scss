@@ -1,0 +1,68 @@
+// colors
+$white: #fff;
+$black: #000;
+$bgc: rgb(12, 92, 65);
+// mixins
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: $bgc;
+}
+
+.container {
+	position: relative;
+	width: 32rem;
+	margin: 15rem auto;
+	perspective: 100rem;
+
+	.img-box {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transform: rotateY(-360deg) translateZ(-30rem);
+		animation: carousel 40s steps(10000, end) infinite;
+		.img {
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			width: 30rem;
+			height: 20rem;
+			img {
+				width: 30rem;
+				height: 20rem;
+				border: 0.5rem solid #fff;
+			}
+			&.img-one {
+				transform: rotateY(0deg) translateZ(30rem);
+			}
+			&.img-two {
+				transform: rotateY(120deg) translateZ(30rem);
+			}
+			&.img-three {
+				transform: rotateY(240deg) translateZ(30rem);
+			}
+		}
+	}
+}
+
+@keyframes carousel {
+	from {
+		transform: rotateY(-360deg);
+	}
+	to {
+		transform: rotateY(0deg);
+	}
+}
