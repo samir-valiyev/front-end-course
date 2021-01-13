@@ -12,8 +12,16 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #000;
+}
+
 .checked {
   color: #ccd7dc;
+}
+
+.samir {
+  background-color: red;
 }
 
 main {
