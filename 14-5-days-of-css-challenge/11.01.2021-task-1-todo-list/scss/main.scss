@@ -70,6 +70,7 @@ main {
 			.todo-list__items {
 				margin-top: 2rem;
 				font-size: 1.6rem;
+				transition: 0.5s;
 
 				.todo-list__item {
 					display: flex;
@@ -77,9 +78,7 @@ main {
 					align-items: center;
 					margin: 1.5rem 0;
 					cursor: pointer;
-
-					i {
-					}
+					transition: 0.3s;
 				}
 			}
 		}
@@ -95,6 +94,7 @@ main {
 
 			&:hover {
 				transform: rotate(180deg);
+				transition: 0.5s;
 			}
 		}
 	}

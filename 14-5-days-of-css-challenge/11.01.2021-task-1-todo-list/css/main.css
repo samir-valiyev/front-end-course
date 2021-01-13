@@ -70,6 +70,7 @@ main .container .todo-list .todo-list__line {
 main .container .todo-list .todo-list__items {
   margin-top: 2rem;
   font-size: 1.6rem;
+  transition: 0.5s;
 }
 
 main .container .todo-list .todo-list__items .todo-list__item {
@@ -78,6 +79,7 @@ main .container .todo-list .todo-list__items .todo-list__item {
   align-items: center;
   margin: 1.5rem 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 main .container .fa-sync {
@@ -92,5 +94,6 @@ main .container .fa-sync {
 
 main .container .fa-sync:hover {
   transform: rotate(180deg);
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
