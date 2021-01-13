@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #1d0c5c;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container {
+  position: relative;
+  width: 50rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-gap: 0.5rem;
+  border: 0.2rem solid #fff;
+}
+
+main .container .white {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+}
+
+main .container .square {
+  width: 5rem;
+  height: 5rem;
+  background-color: #de4738;
+}
+/*# sourceMappingURL=main.css.map */

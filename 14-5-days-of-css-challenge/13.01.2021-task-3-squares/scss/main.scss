@@ -1,0 +1,49 @@
+// colors
+$white: #fff;
+$black: #000;
+$bgc: rgb(29, 12, 92);
+$cubic-bgc: #de4738;
+$border-clr: #fff;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: $bgc;
+}
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.container {
+		position: relative;
+		width: 50rem;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+		grid-gap: 0.5rem;
+		border: 0.2rem solid $border-clr;
+		.white {
+			background-color: $white;
+			width: 5rem;
+			height: 5rem;
+		}
+		.square {
+			width: 5rem;
+			height: 5rem;
+			background-color: $cubic-bgc;
+		}
+	}
+}
