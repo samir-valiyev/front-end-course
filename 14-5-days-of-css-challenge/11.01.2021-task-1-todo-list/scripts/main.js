@@ -39,3 +39,34 @@ for (let i = 0; i < li.length; i++) {
 }
 
 /*========== Todo list ends =========== */
+
+/*========== refresh btn start =========== */
+const refreshBtn = document.querySelector(".fa-sync");
+
+refreshBtn.addEventListener("click", function () {
+	li[0].classList.remove("checked");
+	icon[0].classList.remove("fas");
+	icon[0].classList.remove("fa-check");
+	icon[0].classList.add("far");
+	icon[0].classList.add("fa-circle");
+
+	li[1].classList.remove("checked");
+	icon[1].classList.remove("fas");
+	icon[1].classList.remove("fa-check");
+	icon[1].classList.add("far");
+	icon[1].classList.add("fa-circle");
+
+	li[2].classList.remove("checked");
+	icon[2].classList.remove("fas");
+	icon[2].classList.remove("fa-check");
+	icon[2].classList.add("far");
+	icon[2].classList.add("fa-circle");
+
+	li[3].classList.remove("checked");
+	icon[3].classList.remove("fas");
+	icon[3].classList.remove("fa-check");
+	icon[3].classList.add("far");
+	icon[3].classList.add("fa-circle");
+});
+
+/*========== refresh btn end =========== */
