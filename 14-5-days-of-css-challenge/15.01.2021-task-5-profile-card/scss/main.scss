@@ -1,0 +1,95 @@
+// colors
+$white: #fff;
+$black: #000;
+$bgc1: #d16c2e;
+$bgc2: #e9b969;
+$box-bgc: #f5e8df;
+$box-clr: #786450;
+
+// mixins
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $black;
+}
+main {
+	height: 100vh;
+	@include flex;
+
+	.container {
+		width: 50rem;
+		height: 50rem;
+		border: 1px solid $white;
+		background: linear-gradient(45deg, $bgc1, $bgc2);
+		background: linear-gradient(225deg, $bgc1, $bgc2);
+
+		.pro-card {
+			display: flex;
+			justify-content: space-between;
+			width: 35rem;
+			height: 33rem;
+			border: 1px solid red;
+
+			.pro-card__left-side {
+				width: 100%;
+				border: 1px solid black;
+				@include flex;
+				flex-direction: column;
+				.pro-card__big-cicle {
+					.pro-card__small-circle {
+						figure {
+							img {
+							}
+						}
+					}
+				}
+
+				h2 {
+				}
+
+				p {
+				}
+
+				.pro-card__btns {
+					.pro-card__btn {
+					}
+				}
+			}
+
+			.pro-card__right-side {
+				.pro-card__box {
+					width: 13rem;
+					height: 11rem;
+					@include flex;
+					flex-direction: column;
+					background-color: $box-bgc;
+					color: $box-clr;
+					border: 1px solid $box-clr;
+					h2 {
+					}
+
+					p {
+					}
+				}
+			}
+		}
+	}
+}
