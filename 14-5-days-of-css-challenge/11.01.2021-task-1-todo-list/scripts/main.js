@@ -1,6 +1,9 @@
 "use strict";
 /*============ Date starts ============*/
+
+// Month Names starts
 const fullDate = document.querySelector(".full-date");
+const weekDay = document.querySelector(".week-days");
 const monthNames = [
 	"January",
 	"February",
@@ -15,6 +18,26 @@ const monthNames = [
 	"November",
 	"December",
 ];
+
+// Month Names ends
+
+// Week days starts
+function myFunction() {
+	var d = new Date();
+	var weekday = new Array(7);
+	weekday[0] = "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+
+	var n = weekday[d.getDay()];
+	weekDay.innerHTML = n;
+}
+myFunction();
+// Week days ends
 
 const now = new Date();
 const date = `${now.getDate()}`;
