@@ -1,0 +1,29 @@
+// colors
+$white: #fff;
+$black: #000;
+$bgc1: #d16c2e;
+$bgc2: #e9b969;
+$box-bgc: #f5e8df;
+$box-hover-bgc: #e1cfc2;
+$box-clr: #786450;
+
+// mixins
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+html {
+	font-size: 62.5%;
+}
