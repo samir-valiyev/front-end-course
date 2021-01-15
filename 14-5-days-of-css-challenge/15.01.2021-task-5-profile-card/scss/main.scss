@@ -4,6 +4,7 @@ $black: #000;
 $bgc1: #d16c2e;
 $bgc2: #e9b969;
 $box-bgc: #f5e8df;
+$box-hover-bgc: #e1cfc2;
 $box-clr: #786450;
 
 // mixins
@@ -40,40 +41,109 @@ main {
 		border: 1px solid $white;
 		background: linear-gradient(45deg, $bgc1, $bgc2);
 		background: linear-gradient(225deg, $bgc1, $bgc2);
+		@include flex;
 
 		.pro-card {
 			display: flex;
 			justify-content: space-between;
 			width: 35rem;
 			height: 33rem;
-			border: 1px solid red;
 
 			.pro-card__left-side {
 				width: 100%;
-				border: 1px solid black;
-				@include flex;
+				display: flex;
+				align-items: center;
 				flex-direction: column;
-				.pro-card__big-cicle {
+				background-color: $white;
+
+				.pro-card__img-area {
+					position: relative;
+
 					.pro-card__small-circle {
-						figure {
-							img {
-							}
+					}
+					figure {
+						width: 10rem;
+						height: 10rem;
+						margin: 3rem 0;
+						&::before {
+							content: "";
+							position: absolute;
+							top: 0.1rem;
+							left: -1rem;
+							width: 12rem;
+							height: 12rem;
+							border-top: 2px solid $box-clr;
+							border-left: 2px solid $box-clr;
+							border-radius: 50%;
+							margin: 2rem 0;
+							cursor: pointer;
+							@include flex;
+							transition: 2s;
+							transform: rotate(-45deg);
+						}
+						&:hover::before {
+							transform: rotate(-405deg);
+							transition: 2s;
+						}
+
+						&::after {
+							content: "";
+							position: absolute;
+							top: 2.7rem;
+							left: -0.5rem;
+							width: 11rem;
+							height: 11rem;
+							border-top: 2px solid $box-clr;
+							border-right: 2px solid $box-clr;
+							transform: rotate(45deg);
+							border-radius: 50%;
+							@include flex;
+							transition: 2s;
+							cursor: pointer;
+						}
+						&:hover::after {
+							transform: rotate(405deg);
+							transition: 2s;
+						}
+						img {
+							width: 100%;
+							border-radius: 50%;
+							cursor: pointer;
 						}
 					}
 				}
 
 				h2 {
+					color: $box-clr;
+					font-size: 1.8rem;
 				}
-
 				p {
+					color: $box-clr;
+					font-size: 1.2rem;
+					margin-bottom: 2rem;
 				}
-
 				.pro-card__btns {
+					display: flex;
+					flex-direction: column;
 					.pro-card__btn {
+						width: 15rem;
+						font-size: 1.4rem;
+						font-weight: bold;
+						border: 1px solid $box-clr;
+						border-radius: 2rem;
+						padding: 0.5rem 2rem;
+						color: $box-clr;
+						transition: 0.3s;
+						margin: 0.5rem;
+						text-align: center;
+
+						&:hover {
+							background-color: $box-clr;
+							color: $white;
+						}
 					}
 				}
 			}
-
 			.pro-card__right-side {
 				.pro-card__box {
 					width: 13rem;
@@ -82,11 +152,19 @@ main {
 					flex-direction: column;
 					background-color: $box-bgc;
 					color: $box-clr;
-					border: 1px solid $box-clr;
+					border: 1px solid $white;
+					cursor: pointer;
+					transition: 0.5s;
+
+					&:hover {
+						background-color: $box-hover-bgc;
+					}
 					h2 {
+						font-size: 2rem;
 					}
 
 					p {
+						font-size: 1.2rem;
 					}
 				}
 			}
