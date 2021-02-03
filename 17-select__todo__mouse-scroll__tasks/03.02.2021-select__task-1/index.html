@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--============================ META TAGS START ============================-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Creating Responsive Web Sites " />
+		<meta name="keywords" content="HTML, CSS, Responsive Templates" />
+		<meta name="author" content="Samir Valiyev" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--============================ META TAGS END ==============================-->
+
+		<!--============================ CSS START ==================================-->
+		<link rel="stylesheet" type="text/css" href="css/main.min.css" />
+		<!--============================ CSS END ====================================-->
+
+		<!--============================ FAVICON ICON START =========================-->
+		<link rel="icon" type="image/png" href="images/favicon/moon-8-star.png" />
+		<!--============================ FAVICON ICON END ===========================-->
+
+		<!--============================ FONT AWESOME 5.12 START ====================-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+		/>
+		<!--============================ FONT AWESOME 5.12 END ======================-->
+
+		<title>Selecting task</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="select__features">
+				<form id="form">
+					<div class="select__top">
+						<!-- Colors starts -->
+						<div class="select__style">
+							<label for="colors">Color</label>
+							<select name="colors" id="colors">
+								<option value="yellow">Yellow</option>
+								<option value="red">Red</option>
+								<option value="black">Black</option>
+							</select>
+						</div>
+						<!-- Colors ends -->
+
+						<!-- Widths starts -->
+						<div class="select__style">
+							<label for="width">Width</label>
+							<select name="width" id="widths">
+								<option value="100px">100px</option>
+								<option value="200px">200px</option>
+								<option value="300px">300px</option>
+							</select>
+						</div>
+						<!-- Widths ends -->
+					</div>
+
+					<div class="select__bottom">
+						<!-- Heigts starts -->
+						<div class="select__style">
+							<label for="height">Height</label>
+							<select name="width" id="heights">
+								<option value="100px">100px</option>
+								<option value="200px">200px</option>
+								<option value="400px">400px</option>
+							</select>
+						</div>
+						<!-- Heights ends -->
+
+						<!-- Button starts -->
+						<input type="submit" value="Calculate" id="btn" />
+						<!-- Button ends -->
+					</div>
+				</form>
+			</div>
+			<div class="select__boxes">
+				<div class="select__box"></div>
+			</div>
+		</div>
+		<!-- ============================ JAVASCRIPT START ==========================-->
+		<script src="scripts/main.js"></script>
+		<!-- ============================ JAVASCRIPT END ============================-->
+	</body>
+</html>

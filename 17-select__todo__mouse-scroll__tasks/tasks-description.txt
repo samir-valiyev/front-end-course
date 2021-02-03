@@ -1,0 +1,5 @@
+DAY 1 - 3 eded select yaradin, birinde rengler(sari, qirmizi, qara), ikincisinde width(100px, 200px, 300px), sonuncu select ise height(100px, 200px, 400px) deyerlerini ozunde saxlasin. 1 eded kvadrat bir qutumuz olsun(selectde olan renglerden biri default olsun), 1 eded ise buttonumuz olsun. siz selectden muvafiq width, height ve reng secib butona klik edende qutumuz o deyerlere uygun manipulasiya olunsun
+
+DAY2- To do app yazmaq. Ilk olaraq bir nece to do task siyahinizda olsun, her taskin qarshisinda ise checkbox olsun, asagida bir bos input qoyun, onun icerisine yazacaginiz textin qarshisina checkbox elave olunmaqla to do siyahiniza elave edilsin. Elave etdiyiniz task sehife refresh olsa da to-do da qalsin(localstorage istifade edilir, bilmeseniz problem deyil, ozum size buna  uygun task yazanda gosterecem
+
+DAY3 -30 eded yanbayan card yaradin. Mouse ve scroll eventlerinden istifade ederek cursorla tutub saga sola cekmek imkani yaransin 
