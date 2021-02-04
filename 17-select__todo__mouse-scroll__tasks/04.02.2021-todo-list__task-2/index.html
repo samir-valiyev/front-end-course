@@ -24,10 +24,28 @@
 		/>
 		<!--============================ FONT AWESOME 5.12 END ======================-->
 
-		<title>template</title>
+		<title>Todo List</title>
 	</head>
 
 	<body>
+		<div class="todo-list">
+			<div class="todo-list__header">
+				<h1>Todo List</h1>
+			</div>
+			<div class="todo-list__main">
+				<ul id="ul">
+					<li><input type="checkbox" />Html</li>
+					<li><input type="checkbox" />Css</li>
+					<li><input type="checkbox" />JavaScript</li>
+					<li><input type="checkbox" />React.js</li>
+				</ul>
+			</div>
+			<div class="todo-list__footer">
+				<input class="add-todo" type="text" placeholder="add todo" />
+				<a class="add-btn" href="#">Add</a>
+			</div>
+			<div class="error"></div>
+		</div>
 		<!-- ============================ JAVASCRIPT START ==========================-->
 		<script src="scripts/main.js"></script>
 		<!-- ============================ JAVASCRIPT END ============================-->
