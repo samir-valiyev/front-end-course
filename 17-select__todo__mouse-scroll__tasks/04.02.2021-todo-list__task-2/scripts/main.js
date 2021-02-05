@@ -8,6 +8,7 @@ const errorMessage = document.querySelector(".error");
 
 addBtn.addEventListener("click", function () {
 	let inputValue = input.value;
+
 	if (inputValue === "") {
 		errorMessage.textContent = "please fill the input";
 	} else {
@@ -15,7 +16,8 @@ addBtn.addEventListener("click", function () {
 		let newLi = document.createElement("LI");
 		ul.appendChild(newLi);
 		newLi.innerHTML = `<input type="checkbox" />${data}</li>`;
-		errorMessage.textContent = "";
+		localStorage.setItem("input", input.value);
+
 		input.value = "";
 	}
 });
@@ -25,3 +27,5 @@ for (let i = 0; i < li.length; i++) {
 		this.classList.toggle("color-red");
 	});
 }
+
+const saveToLocalStorage = () => {};
